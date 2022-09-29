@@ -10,13 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_28_174943) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_28_231535) do
+  create_table "character_films", force: :cascade do |t|
+    t.integer "character_ID"
+    t.integer "Film_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "character_homeworlds", force: :cascade do |t|
+    t.integer "character_ID"
+    t.integer "homeworld_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "character_star_ships", force: :cascade do |t|
+    t.integer "character_ID"
+    t.integer "starship_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "characters", force: :cascade do |t|
     t.string "name"
     t.integer "height"
+    t.integer "mass"
     t.string "hair_color"
     t.string "skin_color"
-    t.string "birth_year"
+    t.string "eye_color"
+    t.integer "birth_year"
     t.string "gender"
     t.string "homeworld"
     t.string "species"

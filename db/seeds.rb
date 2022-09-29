@@ -10,19 +10,13 @@ require "csv"
 require "json"
 require "json_csv"
 
-# Character.delete_all
-# Planet.delete_all
-# character_file = Rails.root.join("db/characters.csv")
-#
-# csv_data = File.read(character_file)
-# characters = CSV.parse(csv_data, headers: true, encoding: "utf-8")
-#
-# characters.each do |c|
-#   puts
-# end
+Character.delete_all
+Planet.delete_all
+character_file = Rails.root.join("db/characters.csv")
 
-CSV.open("films.csv", "w") do |csv| # open new file for write
-  JSON.parse(File.open("your_json.json").read).each do |hash| # open json to parse
-    csv << hash.values # write value to file
-  end
+csv_data = File.read(character_file)
+characters = CSV.parse(csv_data, headers: true, encoding: "utf-8")
+
+characters.each do |c|
+  puts test
 end

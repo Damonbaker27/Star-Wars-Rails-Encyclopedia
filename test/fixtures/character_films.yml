@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  character_ID: 1
+  Film_ID: 1
+
+two:
+  character_ID: 1
+  Film_ID: 1

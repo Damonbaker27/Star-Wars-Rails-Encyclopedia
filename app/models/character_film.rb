@@ -1,0 +1,2 @@
+class CharacterFilm < ApplicationRecord
+end
