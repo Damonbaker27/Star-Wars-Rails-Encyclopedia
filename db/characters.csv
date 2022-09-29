@@ -1,7 +1,7 @@
-nullme,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld,specieHumans
+name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld,species
 Luke Skywalker,172,77,blond,fair,blue,19,male,Tatooine,Human
 C-3PO,167,75,null,gold,yellow,112,none,Tatooine,Droid
-R2-D2,96,32,null,"white, blue",red,33,none,nullboo,Droid
+R2-D2,96,32,null,"white, blue",red,33,none,Naboo,Droid
 Darth Vader,202,136,none,white,yellow,41.9,male,Tatooine,Human
 Leia Organull,150,49,brown,light,brown,19,female,Alderaan,Human
 Owen Lars,178,120,"brown, grey",light,blue,52,male,Tatooine,Human
@@ -14,11 +14,11 @@ Wilhuff Tarkin,180,null,"auburn, grey",fair,blue,64,male,Eriadu,Human
 Chewbacca,228,112,brown,unknown,blue,200,male,Kashyyyk,Wookiee
 Han Solo,180,80,brown,fair,brown,29,male,Corellia,Human
 Greedo,173,74,null,green,black,44,male,Rodia,Rodian
-Jabba Desilijic Tiure,175,1358,null,"green-tan, brown",orange,600,hermaphroditic,nulll Hutta,Hutt
+Jabba Desilijic Tiure,175,1358,null,"green-tan, brown",orange,600,hermaphroditic,null Hutta,Hutt
 Wedge Antilles,170,77,brown,fair,hazel,21,male,Corellia,Human
 Jek Tono Porkins,180,110,brown,fair,blue,null,male,Bestine IV,Human
 Yoda,66,17,white,green,brown,896,male,null,Yoda's species
-Palpatine,170,75,grey,pale,yellow,82,male,nullboo,Human
+Palpatine,170,75,grey,pale,yellow,82,male,Naboo,Human
 Boba Fett,183,78.2,black,fair,brown,31.5,male,Kamino,Human
 IG-88,200,140,none,metal,red,15,none,null,Droid
 Bossk,190,113,none,green,red,53,male,Trandosha,Trandoshan
@@ -32,13 +32,13 @@ Nien Nunb,160,68,none,grey,black,null,male,Sullust,Sullustan
 Qui-Gon Jinn,193,89,brown,fair,blue,92,male,null,Human
 Nute Gunray,191,90,none,mottled green,red,null,male,Cato Neimoidia,Neimodian
 Finis Valorum,170,null,blond,fair,blue,91,male,Coruscant,Human
-Jar Jar Binks,196,66,none,orange,orange,52,male,nullboo,Gungan
-Roos Tarpals,224,82,none,grey,orange,null,male,nullboo,Gungan
-Rugor nullss,206,null,none,green,orange,null,male,nullboo,Gungan
-Ric Olié,183,null,brown,fair,blue,null,null,nullboo,null
+Jar Jar Binks,196,66,none,orange,orange,52,male,Naboo,Gungan
+Roos Tarpals,224,82,none,grey,orange,null,male,Naboo,Gungan
+Rugor nullss,206,null,none,green,orange,null,male,Naboo,Gungan
+Ric Olié,183,null,brown,fair,blue,null,null,Naboo,null
 Watto,137,null,black,"blue, grey",yellow,null,male,Toydaria,Toydarian
 Sebulba,112,40,none,"grey, red",orange,null,male,Malastare,Dug
-Quarsh Panullka,183,null,black,dark,brown,62,null,nullboo,null
+Quarsh Panullka,183,null,black,dark,brown,62,null,Naboo,null
 Shmi Skywalker,163,null,black,fair,brown,72,female,Tatooine,Human
 Darth Maul,175,80,none,red,yellow,54,male,Dathomir,Zabrak
 Bib Fortunull,180,null,none,pale,pink,null,male,Ryloth,Twi'lek
@@ -55,13 +55,13 @@ Saesee Tiin,188,null,none,pale,orange,null,male,Iktotch,Iktotchi
 Yarael Poof,264,null,none,white,yellow,null,male,Quermia,Quermian
 Plo Koon,188,80,none,orange,black,22,male,Dorin,Kel Dor
 Mas Amedda,196,null,none,blue,blue,null,male,Champala,Chagrian
-Gregar Typho,185,85,black,dark,brown,null,male,nullboo,Human
-Cordé,157,null,brown,light,brown,null,female,nullboo,Human
+Gregar Typho,185,85,black,dark,brown,null,male,Naboo,Human
+Cordé,157,null,brown,light,brown,null,female,Naboo,Human
 Cliegg Lars,183,null,brown,fair,blue,82,male,Tatooine,Human
 Poggle the Lesser,183,80,none,green,yellow,null,male,Geonosis,Geonosian
 Luminullra Unduli,170,56.2,black,yellow,blue,58,female,Mirial,Mirialan
 Barriss Offee,166,50,black,yellow,blue,40,female,Mirial,Mirialan
-Dormé,165,null,brown,light,brown,null,female,nullboo,Human
+Dormé,165,null,brown,light,brown,null,female,Naboo,Human
 Dooku,193,80,white,fair,brown,102,male,Serenno,Human
 Bail Prestor Organull,191,null,black,tan,brown,67,male,Alderaan,Human
 Jango Fett,183,79,black,tan,brown,66,male,Concord Dawn,Human
@@ -85,4 +85,4 @@ Rey,null,null,brown,light,hazel,null,female,null,Human
 Poe Dameron,null,null,brown,light,brown,null,male,null,Human
 BB8,null,null,none,none,black,null,none,null,Droid
 Captain Phasma,null,null,unknown,unknown,unknown,null,null,null,null
-Padmé Amidala,165,45,brown,light,brown,46,female,nullboo,Human
+Padmé Amidala,165,45,brown,light,brown,46,female,Naboo,Human

@@ -1,2 +1,0 @@
-class CharacterHomeworld < ApplicationRecord
-end

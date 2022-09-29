@@ -1,4 +1,4 @@
-name,model,manufacturer,cost_in_credits,length,max_atmosphering_speed,crew,passeStarfightern/angers,cargo_capacity,consumables,hyperdrive_rating,MGLT,starship_class
+name,model,manufacturer,cost_in_credits,length,max_atmosphering_speed,crew,passengers,cargo_capacity,consumables,hyperdrive_rating,MGLT,starship_class
 Executor,Executor-class star dreadnought,"Kuat Drive Yards, Fondor Shipyards",1143350000,19000,null,279144,38000,250000000,6 years,2.0,40,Star dreadnought
 Sentinel-class landing craft,Sentinel-class landing craft,"Sienar Fleet Systems, Cyngus Spaceworks",240000,38,1000,5,75,180000,1 month,1.0,70,landing craft
 Death Star,DS-1 Orbital Battle Station,"Imperial Department of Military Research, Sienar Fleet Systems",1000000000000,120000,null,342953,843342,1000000000000,3 years,4.0,10,Deep Space Mobile Battlestation
