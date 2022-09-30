@@ -10,26 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_30_180541) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_30_220608) do
   create_table "character_films", force: :cascade do |t|
-    t.integer "character_ID"
-    t.integer "Film_ID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "character_homeworlds", force: :cascade do |t|
-    t.integer "character_ID"
-    t.integer "homeworld_ID"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer "characters_id"
+    t.integer "films_id"
+    t.integer "character_id"
+    t.integer "film_id"
+    t.index ["characters_id"], name: "index_character_films_on_characters_id"
+    t.index ["films_id"], name: "index_character_films_on_films_id"
   end
 
   create_table "character_star_ships", force: :cascade do |t|
-    t.integer "character_ID"
-    t.integer "starship_ID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "characters_id"
+    t.integer "starships_id"
+    t.integer "starship_id"
+    t.integer "character_id"
+    t.index ["characters_id"], name: "index_character_star_ships_on_characters_id"
+    t.index ["starships_id"], name: "index_character_star_ships_on_starships_id"
   end
 
   create_table "characters", force: :cascade do |t|
@@ -41,20 +42,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_180541) do
     t.string "eye_color"
     t.integer "birth_year"
     t.string "gender"
-    t.string "homeworld"
-    t.string "species"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "homeworlds_id"
     t.integer "homeworld_id"
-    t.integer "species_id"
-    t.integer "character_films_id"
-    t.integer "character_star_ships_id"
-    t.index ["character_films_id"], name: "index_characters_on_character_films_id"
-    t.index ["character_star_ships_id"], name: "index_characters_on_character_star_ships_id"
+    t.integer "race_id"
     t.index ["homeworld_id"], name: "index_characters_on_homeworld_id"
-    t.index ["homeworlds_id"], name: "index_characters_on_homeworlds_id"
-    t.index ["species_id"], name: "index_characters_on_species_id"
+    t.index ["race_id"], name: "index_characters_on_race_id"
   end
 
   create_table "films", force: :cascade do |t|
@@ -82,7 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_180541) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "species", force: :cascade do |t|
+  create_table "races", force: :cascade do |t|
     t.string "name"
     t.string "classification"
     t.string "designation"
@@ -132,10 +125,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_180541) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "characters", "character_films", column: "character_films_id"
-  add_foreign_key "characters", "character_star_ships", column: "character_star_ships_id"
-  add_foreign_key "characters", "homeworlds"
-  add_foreign_key "characters", "species"
+  add_foreign_key "character_films", "characters", column: "characters_id"
+  add_foreign_key "character_films", "films", column: "films_id"
+  add_foreign_key "character_star_ships", "characters", column: "characters_id"
+  add_foreign_key "character_star_ships", "starships", column: "starships_id"
   add_foreign_key "films", "character_films", column: "character_films_id"
   add_foreign_key "starships", "character_star_ships", column: "character_star_ships_id"
 end

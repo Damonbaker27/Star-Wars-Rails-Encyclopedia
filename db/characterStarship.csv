@@ -1,13 +1,7 @@
-name,starships
+name,starship
 Luke Skywalker,X-wing
 Luke Skywalker,Imperial shuttle
-C-3PO,
-R2-D2,
 Darth Vader,TIE Advanced x1
-Leia Organa,
-Owen Lars,
-Beru Whitesun lars,
-R5-D4,
 Biggs Darklighter,X-wing
 Obi-Wan Kenobi,Jedi starfighter
 Obi-Wan Kenobi,Trade Federation cruiser
@@ -17,83 +11,22 @@ Obi-Wan Kenobi,Belbullab-22 starfighter
 Anakin Skywalker,Trade Federation cruiser
 Anakin Skywalker,Jedi Interceptor
 Anakin Skywalker,Naboo fighter
-Wilhuff Tarkin,
 Chewbacca,Millennium Falcon
 Chewbacca,Imperial shuttle
 Han Solo,Millennium Falcon
 Han Solo,Imperial shuttle
-Greedo,
-Jabba Desilijic Tiure,
 Wedge Antilles,X-wing
 Jek Tono Porkins,X-wing
-Yoda,
-Palpatine,
 Boba Fett,Slave 1
-IG-88,
-Bossk,
 Lando Calrissian,Millennium Falcon
-Lobot,
-Ackbar,
-Mon Mothma,
 Arvel Crynyd,A-wing
-Wicket Systri Warrick,
 Nien Nunb,Millennium Falcon
-Qui-Gon Jinn,
-Nute Gunray,
-Finis Valorum,
-Jar Jar Binks,
-Roos Tarpals,
-Rugor Nass,
 Ric Olié,Naboo Royal Starship
-Watto,
-Sebulba,
-Quarsh Panaka,
-Shmi Skywalker,
 Darth Maul,Scimitar
-Bib Fortuna,
-Ayla Secura,
-Dud Bolt,
-Gasgano,
-Ben Quadinaros,
-Mace Windu,
-Ki-Adi-Mundi,
-Kit Fisto,
-Eeth Koth,
-Adi Gallia,
-Saesee Tiin,
-Yarael Poof,
 Plo Koon,Jedi starfighter
-Mas Amedda,
 Gregar Typho,Naboo fighter
-Cordé,
-Cliegg Lars,
-Poggle the Lesser,
-Luminara Unduli,
-Barriss Offee,
-Dormé,
-Dooku,
-Bail Prestor Organa,
-Jango Fett,
-Zam Wesell,
-Dexter Jettster,
-Lama Su,
-Taun We,
-Jocasta Nu,
-Ratts Tyerell,
-R4-P17,
-Wat Tambor,
-San Hill,
-Shaak Ti,
 Grievous,Belbullab-22 starfighter
-Tarfful,
-Raymus Antilles,
-Sly Moore,
-Tion Medon,
-Finn,
-Rey,
 Poe Dameron,T-70 X-wing fighter
-BB8,
-Captain Phasma,
 Padmé Amidala,H-type Nubian yacht
-Padmé Amidala, Naboo star skiff
+Padmé Amidala,Naboo star skiff
 Padmé Amidala,Naboo fighter

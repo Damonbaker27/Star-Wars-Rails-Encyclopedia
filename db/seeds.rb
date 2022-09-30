@@ -12,10 +12,11 @@ require "json_csv"
 
 Character.delete_all
 Homeworld.delete_all
-Species.delete_all
+Race.delete_all
 Film.delete_all
 Starship.delete_all
 CharacterFilm.delete_all
+CharacterStarShip.delete_all
 
 puts "running seed"
 # Character csv 1/7
@@ -23,10 +24,10 @@ character_file = Rails.root.join("db/characters.csv")
 csv_character_data = File.read(character_file)
 characters = CSV.parse(csv_character_data, headers: true, encoding: "utf-8")
 
-# Species.csv 2/7
-species_file = Rails.root.join("db/species.csv")
-csv_species_data = File.read(species_file)
-species = CSV.parse(csv_species_data, headers: true, encoding: "utf-8")
+# Race.csv 2/7
+race_file = Rails.root.join("db/race.csv")
+csv_race_data = File.read(race_file)
+race = CSV.parse(csv_race_data, headers: true, encoding: "utf-8")
 
 # homeworld.csv 3/7
 homeworld_file = Rails.root.join("db/homeworld.csv")
@@ -44,7 +45,7 @@ csv_starship_data = File.read(starship_file)
 starships = CSV.parse(csv_starship_data, headers: true, encoding: "utf-8")
 
 # characterFilm.csv 6/7
-character_Film_file = Rails.root.join("db/characterStarship.csv")
+character_Film_file = Rails.root.join("db/characterFilm.csv")
 csv_character_Film_data = File.read(character_Film_file)
 character_Films = CSV.parse(csv_character_Film_data, headers: true, encoding: "utf-8")
 
@@ -65,8 +66,8 @@ homeworlds.each do |p|
     population:      p["population"]
   )
 end
-species.each do |s|
-  specie = Species.create(
+race.each do |s|
+  Race.create(
     name:             s["name"],
     classification:   s["classification"],
     designation:      s["designation"],
@@ -109,12 +110,20 @@ end
 
 characters.each do |c|
   homeworld = Homeworld.find_or_create_by(name: c["homeworld"])
-  species = Species.find_or_create_by(name: c["species"])
 
-  next unless species && species.valid?
-
-  puts "test"
   homeworld.characters.find_or_create_by(
+    name:       c["name"],
+    height:     c["height"],
+    mass:       c["mass"],
+    hair_color: c["hair_color"],
+    skin_color: c["skin_color"],
+    eye_color:  c["eye_color"],
+    birth_year: c["birth_year"],
+    gender:     c["gender"]
+  )
+  race = Race.find_or_create_by(name: c["species"])
+
+  race.characters.find_or_create_by(
     name:       c["name"],
     height:     c["height"],
     mass:       c["mass"],
@@ -127,20 +136,32 @@ characters.each do |c|
 end
 
 character_Films.each do |cf|
-  # puts "#{cf['name']} ---#{cf['films']}"
-
-  # character_film = CharacterFilm.create(
-  # name:  cf["name"],
-  # films: cf["films"]
-  # )
+  # puts " the film is #{cf['films']} and the char is #{cf['name']}"
+  films = Film.find_or_create_by(name: cf["films"])
+  char = Character.find_or_create_by(name: cf["name"])
+  # puts "the character is #{char['name']} and the movie is #{films['name']}"
+  CharacterFilm.create(
+    character_id: char["id"],
+    film_id:      films["id"]
+  )
 end
 
 character_starships.each do |cs|
-  # puts "#{cs['name']}----#{cs['starship']}"
+  star_Ship = Starship.find_or_create_by(name: cs["starship"])
+  char = Character.find_or_create_by(name: cs["name"])
+  # puts "#{star_Ship['id']}:#{star_Ship['name']}---> #{char['id']}:#{char['name']}"
+
+  CharacterStarShip.find_or_create_by(
+    starship_id:  star_Ship["id"],
+    character_id: char["id"]
+  )
 end
 
 puts "imported #{Character.count} new characters"
 puts "imported #{Homeworld.count} new homeworlds"
-puts "imported #{Species.count} new species"
+puts "imported #{Race.count} new race"
 puts "imported #{Film.count} new films"
 puts "imported #{Starship.count} new starships"
+puts "imported #{Race.count} new races"
+puts "imported #{CharacterStarShip.count} new character starships"
+puts "imported #{CharacterFilm.count} new character films"
