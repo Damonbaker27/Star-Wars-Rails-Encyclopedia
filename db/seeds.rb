@@ -11,13 +11,12 @@ require "json"
 require "json_csv"
 
 Character.delete_all
-Planet.delete_all
+Homeworld.delete_all
 Species.delete_all
 Film.delete_all
 Starship.delete_all
-Character_film.delete_all
+CharacterFilm.delete_all
 
-character
 puts "running seed"
 # Character csv 1/7
 character_file = Rails.root.join("db/characters.csv")
@@ -29,10 +28,10 @@ species_file = Rails.root.join("db/species.csv")
 csv_species_data = File.read(species_file)
 species = CSV.parse(csv_species_data, headers: true, encoding: "utf-8")
 
-# planet.csv 3/7
-planet_file = Rails.root.join("db/planets.csv")
-csv_planet_data = File.read(planet_file)
-planets = CSV.parse(csv_planet_data, headers: true, encoding: "utf-8")
+# homeworld.csv 3/7
+homeworld_file = Rails.root.join("db/homeworld.csv")
+csv_homeworld_data = File.read(homeworld_file)
+homeworlds = CSV.parse(csv_homeworld_data, headers: true, encoding: "utf-8")
 
 # films.csv 4/7
 film_file = Rails.root.join("db/films.csv")
@@ -51,11 +50,10 @@ character_Films = CSV.parse(csv_character_Film_data, headers: true, encoding: "u
 
 # characterStarship.csv 7/7
 character_starship_file = Rails.root.join("db/characterStarship.csv")
-csv_character_starship_data = File.read(starship_file)
-character_starships = CSV.parse(csv_character_starships_data, headers: true, encoding: "utf-8")
-
-planets.each do |p|
-  planet = Planet.create(
+csv_character_starship_data = File.read(character_starship_file)
+character_starships = CSV.parse(csv_character_starship_data, headers: true, encoding: "utf-8")
+homeworlds.each do |p|
+  homeworld = Homeworld.create(
     name:            p["name"],
     rotation_period: p["rotation_period"],
     orbital_period:  p["orbital_period"],
@@ -67,7 +65,6 @@ planets.each do |p|
     population:      p["population"]
   )
 end
-
 species.each do |s|
   specie = Species.create(
     name:             s["name"],
@@ -110,6 +107,25 @@ starships.each do |st|
   )
 end
 
+characters.each do |c|
+  homeworld = Homeworld.find_or_create_by(name: c["homeworld"])
+  species = Species.find_or_create_by(name: c["species"])
+
+  next unless species && species.valid?
+
+  puts "test"
+  homeworld.characters.find_or_create_by(
+    name:       c["name"],
+    height:     c["height"],
+    mass:       c["mass"],
+    hair_color: c["hair_color"],
+    skin_color: c["skin_color"],
+    eye_color:  c["eye_color"],
+    birth_year: c["birth_year"],
+    gender:     c["gender"]
+  )
+end
+
 character_Films.each do |cf|
   # puts "#{cf['name']} ---#{cf['films']}"
 
@@ -119,7 +135,12 @@ character_Films.each do |cf|
   # )
 end
 
-puts "imported #{Planet.count} new planets"
+character_starships.each do |cs|
+  # puts "#{cs['name']}----#{cs['starship']}"
+end
+
+puts "imported #{Character.count} new characters"
+puts "imported #{Homeworld.count} new homeworlds"
 puts "imported #{Species.count} new species"
 puts "imported #{Film.count} new films"
 puts "imported #{Starship.count} new starships"

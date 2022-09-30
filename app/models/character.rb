@@ -7,6 +7,6 @@ class Character < ApplicationRecord
   has_many :starship, through: :character_star_ships
   has_many :character_star_ships
 
-  # relationship for the homworld table
+  # relationship for the homeworld table
   belongs_to :homeworld
 end

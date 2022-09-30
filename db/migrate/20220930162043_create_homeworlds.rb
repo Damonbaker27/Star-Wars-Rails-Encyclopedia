@@ -1,6 +1,6 @@
-class CreatePlanets < ActiveRecord::Migration[7.0]
+class CreateHomeworlds < ActiveRecord::Migration[7.0]
   def change
-    create_table :planets do |t|
+    create_table :homeworlds do |t|
       t.string :name
       t.integer :rotation_period
       t.integer :orbital_period
