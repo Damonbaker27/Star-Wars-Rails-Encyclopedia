@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @characters = find
+    @characters = Character.all
+    @homeworlds = Homeworld.all
   end
 end
