@@ -1,5 +1,9 @@
 class CharactersController < ApplicationController
-  def Index
+  def index
     @characters = Character.all
+  end
+
+  def show
+    @character = Character.find(params[:id])
   end
 end

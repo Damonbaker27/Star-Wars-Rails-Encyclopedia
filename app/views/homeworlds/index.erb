@@ -3,7 +3,7 @@
 <ul>
   <% @homeworlds.each do |homeworld| %>
     <li>
-        <%= homeworld.name %>
+        <%= link_to homeworld.name, homeworld %>
       </a>
     </li>
   <% end %>

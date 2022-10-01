@@ -4,8 +4,15 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "home#index"
-  get "starships/index"
-  get "race/index"
-  get "homeworlds/index"
-  get "films/index"
+
+  resources :starships
+  resources :characters
+  resources :homeworlds
+  resources :films
+  resources :species
+  # get "characters/" to: 'characters/index' as: character_path
+  # get "starships/index"
+  # get "race/index"
+  # get "homeworlds/index"
+  # get "films/index"
 end

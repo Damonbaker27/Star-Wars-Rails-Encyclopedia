@@ -3,7 +3,7 @@
 <ul>
   <% @characters.each do |character| %>
     <li>
-        <%= character.name %>
+        <%= link_to character.name, character %>
       </a>
     </li>
   <% end %>
