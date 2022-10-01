@@ -5,12 +5,58 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
   </head>
 
   <body>
+  <section class ="section">
+  <div class = "container">
+  <h1 class = "title is-1"> Star Wars encyclopedia </h1>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <!-- navbar items, navbar burger... -->
+
+  </div>
+  <div class="navbar-menu">
+    <!-- navbar start, navbar end -->
+    <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item">
+        Home
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-item" href="https://bulma.io">
+          Characters
+        </a>
+
+        <a class="navbar-item">
+          Planets
+        </a>
+
+        <a class="navbar-item">
+          Species
+        </a>
+        <a class="navbar-item">
+          Starships
+        </a>
+
+        <a class="navbar-item">
+          About
+        </a>
+  </div>
+</nav>
     <%= yield %>
+  </div>
+<footer class="footer">
+  <div class="content has-text-left-aligned">
+    <p>
+      big sexy footer
+      copyWrong 2022
+    </p>
+  </div>
+</footer>
+  </section>
   </body>
 </html>

@@ -29,6 +29,11 @@ gem "jbuilder"
 
 gem "json_csv"
 
+gem "bulma-rails", "~> 0.9.3"
+
+gem 'sass-rails'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
