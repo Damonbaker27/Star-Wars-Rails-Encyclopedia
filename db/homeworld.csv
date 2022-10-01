@@ -1,61 +1,61 @@
-name,rotation_period,orbital_period,diameter,climate,gravity,terrain,surface_water,population
-Alderaan,24,364,12500,temperate,1 standard,"grasslands, mountains",40,2000000000
-Yavin IV,24,4818,10200,"temperate, tropical",1 standard,"jungle, rainforests",8,1000
-Hoth,23,549,7200,frozen,1.1 standard,"tundra, ice caves, mountain ranges",100,null
-Dagobah,23,341,8900,murky,N/A,"swamp, jungles",8,null
-Bespin,12,5110,118000,temperate,"1.5 (surface), 1 standard (Cloud City)",gas giant,0,6000000
-Endor,18,402,4900,temperate,0.85 standard,"forests, mountains, lakes",8,30000000
-Naboo,26,312,12120,temperate,1 standard,"grassy hills, swamps, forests, mountains",12,4500000000
-Coruscant,24,368,12240,temperate,1 standard,"cityscape, mountains",null,1000000000000
-Kamino,27,463,19720,temperate,1 standard,ocean,100,1000000000
-Geonosis,30,256,11370,"temperate, arid",0.9 standard,"rock, desert, mountain, barren",5,100000000000
-Utapau,27,351,12900,"temperate, arid, windy",1 standard,"scrublands, savanna, canyons, sinkholes",0.9,95000000
-Mustafar,36,412,4200,hot,1 standard,"volcanoes, lava rivers, mountains, caves",0,20000
-Kashyyyk,26,381,12765,tropical,1 standard,"jungle, forests, lakes, rivers",60,45000000
-Polis Massa,24,590,0,artificial temperate ,0.56 standard,airless asteroid,0,1000000
-Mygeeto,12,167,10088,frigid,1 standard,"glaciers, mountains, ice canyons",null,19000000
-Felucia,34,231,9100,"hot, humid",0.75 standard,fungus forests,null,8500000
-Cato Neimoidia,25,278,0,"temperate, moist",1 standard,"mountains, fields, forests, rock arches",null,10000000
-Saleucami,26,392,14920,hot,null,"caves, desert, mountains, volcanoes",null,1400000000
-Stewjon,null,null,0,temperate,1 standard,grass,null,null
-Eriadu,24,360,13490,polluted,1 standard,cityscape,null,22000000000
-Corellia,25,329,11000,temperate,1 standard,"plains, urban, hills, forests",70,3000000000
-Rodia,29,305,7549,hot,1 standard,"jungles, oceans, urban, swamps",60,1300000000
-Nal Hutta,87,413,12150,temperate,1 standard,"urban, oceans, swamps, bogs",null,7000000000
-Dantooine,25,378,9830,temperate,1 standard,"oceans, savannas, mountains, grasslands",null,1000
-Bestine IV,26,680,6400,temperate,null,"rocky islands, oceans",98,62000000
-Ord Mantell,26,334,14050,temperate,1 standard,"plains, seas, mesas",10,4000000000
-Trandosha,25,371,0,arid,0.62 standard,"mountains, seas, grasslands, deserts",null,42000000
-Socorro,20,326,0,arid,1 standard,"deserts, mountains",null,300000000
-Mon Cala,21,398,11030,temperate,1,"oceans, reefs, islands",100,27000000000
-Chandrila,20,368,13500,temperate,1,"plains, forests",40,1200000000
-Sullust,20,263,12780,superheated,1,"mountains, volcanoes, rocky deserts",5,18500000000
-Toydaria,21,184,7900,temperate,1,"swamps, lakes",null,11000000
-Malastare,26,201,18880,"arid, temperate, tropical",1.56,"swamps, deserts, jungles, mountains",null,2000000000
-Dathomir,24,491,10480,temperate,0.9,"forests, deserts, savannas",null,5200
-Ryloth,30,305,10600,"temperate, arid, subartic",1,"mountains, valleys, deserts, tundra",5,1500000000
-Aleen Minor,null,null,null,null,null,null,null,null
-Vulpter,22,391,14900,"temperate, artic",1,"urban, barren",null,421000000
-Troiken,null,null,null,null,null,"desert, tundra, rainforests, mountains",null,null
-Tund,48,1770,12190,null,null,"barren, ash",null,0
-Haruun Kal,25,383,10120,temperate,0.98,"toxic cloudsea, plateaus, volcanoes",null,705300
-Cerea,27,386,null,temperate,1,verdant,20,450000000
-Glee Anselm,33,206,15600,"tropical, temperate",1,"lakes, islands, swamps, seas",80,500000000
-Iridonia,29,413,null,null,null,"rocky canyons, acid pools",null,null
-Tholoth,null,null,null,null,null,null,null,null
-Iktotch,22,481,null,"arid, rocky, windy",1,rocky,null,null
-Quermia,null,null,null,null,null,null,null,null
-Dorin,22,409,13400,temperate,1,null,null,null
-Champala,27,318,null,temperate,1,"oceans, rainforests, plateaus",null,3500000000
-Mirial,null,null,null,null,null,deserts,null,null
-Serenno,null,null,null,null,null,"rainforests, rivers, mountains",null,null
-Concord Dawn,null,null,null,null,null,"jungles, forests, deserts",null,null
-Zolan,null,null,null,null,null,null,null,null
-Ojom,null,null,null,frigid,null,"oceans, glaciers",100,500000000
-Skako,27,384,null,temperate,1,"urban, vines",null,500000000000
-Muunilinst,28,412,13800,temperate,1,"plains, forests, hills, mountains",25,5000000000
-Shili,null,null,null,temperate,1,"cities, savannahs, seas, plains",null,null
-Kalee,23,378,13850,"arid, temperate, tropical",1,"rainforests, cliffs, canyons, seas",null,4000000000
-Umbara,null,null,null,null,null,null,null,null
-Tatooine,23,304,10465,arid,1 standard,desert,1,200000
-Jakku,null,null,null,null,null,deserts,null,null
+name,rotation_period,orbital_period,diameter,climate,gravity,terrain,surface_water,population,image_path
+Alderaan,24,364,12500,temperate,1 standard,"grasslands, mountains",40,2000000000,alderaan.jpg
+Yavin IV,24,4818,10200,"temperate, tropical",1 standard,"jungle, rainforests",8,1000,yavin4
+Hoth,23,549,7200,frozen,1.1 standard,"tundra, ice caves, mountain ranges",100,null,hoth.jpg
+Dagobah,23,341,8900,murky,N/A,"swamp, jungles",8,null,dagobah.jpg
+Bespin,12,5110,118000,temperate,"1.5 (surface), 1 standard (Cloud City)",gas giant,0,6000000,bespin.jpg
+Endor,18,402,4900,temperate,0.85 standard,"forests, mountains, lakes",8,30000000,endor.jpg
+Naboo,26,312,12120,temperate,1 standard,"grassy hills, swamps, forests, mountains",12,4500000000,naboo.jpg
+Coruscant,24,368,12240,temperate,1 standard,"cityscape, mountains",null,1000000000000,corusant.jpg
+Kamino,27,463,19720,temperate,1 standard,ocean,100,1000000000,kamino.jpg
+Geonosis,30,256,11370,"temperate, arid",0.9 standard,"rock, desert, mountain, barren",5,100000000000,geonosis.jpg
+Utapau,27,351,12900,"temperate, arid, windy",1 standard,"scrublands, savanna, canyons, sinkholes",0.9,95000000,utapau.jpg
+Mustafar,36,412,4200,hot,1 standard,"volcanoes, lava rivers, mountains, caves",0,20000,mustafar.jpg
+Kashyyyk,26,381,12765,tropical,1 standard,"jungle, forests, lakes, rivers",60,45000000,kashyyyk.jpg
+Polis Massa,24,590,0,artificial temperate ,0.56 standard,airless asteroid,0,1000000,polisMassa.jpg
+Mygeeto,12,167,10088,frigid,1 standard,"glaciers, mountains, ice canyons",null,19000000,mygetto.jpg
+Felucia,34,231,9100,"hot, humid",0.75 standard,fungus forests,null,8500000,felucia.jpg
+Cato Neimoidia,25,278,0,"temperate, moist",1 standard,"mountains, fields, forests, rock arches",null,10000000,null
+Saleucami,26,392,14920,hot,null,"caves, desert, mountains, volcanoes",null,1400000000,null
+Stewjon,null,null,0,temperate,1 standard,grass,null,null,null
+Eriadu,24,360,13490,polluted,1 standard,cityscape,null,22000000000,null
+Corellia,25,329,11000,temperate,1 standard,"plains, urban, hills, forests",70,3000000000,null
+Rodia,29,305,7549,hot,1 standard,"jungles, oceans, urban, swamps",60,1300000000,null
+Nal Hutta,87,413,12150,temperate,1 standard,"urban, oceans, swamps, bogs",null,7000000000,null
+Dantooine,25,378,9830,temperate,1 standard,"oceans, savannas, mountains, grasslands",null,1000,null
+Bestine IV,26,680,6400,temperate,null,"rocky islands, oceans",98,62000000,null
+Ord Mantell,26,334,14050,temperate,1 standard,"plains, seas, mesas",10,4000000000,null
+Trandosha,25,371,0,arid,0.62 standard,"mountains, seas, grasslands, deserts",null,42000000,null
+Socorro,20,326,0,arid,1 standard,"deserts, mountains",null,300000000,null
+Mon Cala,21,398,11030,temperate,1,"oceans, reefs, islands",100,27000000000,null
+Chandrila,20,368,13500,temperate,1,"plains, forests",40,1200000000,null
+Sullust,20,263,12780,superheated,1,"mountains, volcanoes, rocky deserts",5,18500000000,null
+Toydaria,21,184,7900,temperate,1,"swamps, lakes",null,11000000,null
+Malastare,26,201,18880,"arid, temperate, tropical",1.56,"swamps, deserts, jungles, mountains",null,2000000000,null
+Dathomir,24,491,10480,temperate,0.9,"forests, deserts, savannas",null,5200,null
+Ryloth,30,305,10600,"temperate, arid, subartic",1,"mountains, valleys, deserts, tundra",5,1500000000,null
+Aleen Minor,null,null,null,null,null,null,null,null,null
+Vulpter,22,391,14900,"temperate, artic",1,"urban, barren",null,421000000,null
+Troiken,null,null,null,null,null,"desert, tundra, rainforests, mountains",null,null,null
+Tund,48,1770,12190,null,null,"barren, ash",null,0,null
+Haruun Kal,25,383,10120,temperate,0.98,"toxic cloudsea, plateaus, volcanoes",null,705300,null
+Cerea,27,386,null,temperate,1,verdant,20,450000000,null
+Glee Anselm,33,206,15600,"tropical, temperate",1,"lakes, islands, swamps, seas",80,500000000,null
+Iridonia,29,413,null,null,null,"rocky canyons, acid pools",null,null,null
+Tholoth,null,null,null,null,null,null,null,null,null
+Iktotch,22,481,null,"arid, rocky, windy",1,rocky,null,null,null
+Quermia,null,null,null,null,null,null,null,null,null
+Dorin,22,409,13400,temperate,1,null,null,null,null
+Champala,27,318,null,temperate,1,"oceans, rainforests, plateaus",null,3500000000,null
+Mirial,null,null,null,null,null,deserts,null,null,null
+Serenno,null,null,null,null,null,"rainforests, rivers, mountains",null,null,null
+Concord Dawn,null,null,null,null,null,"jungles, forests, deserts",null,null,null
+Zolan,null,null,null,null,null,null,null,null,null
+Ojom,null,null,null,frigid,null,"oceans, glaciers",100,500000000,null
+Skako,27,384,null,temperate,1,"urban, vines",null,500000000000,null
+Muunilinst,28,412,13800,temperate,1,"plains, forests, hills, mountains",25,5000000000,null
+Shili,null,null,null,temperate,1,"cities, savannahs, seas, plains",null,null,null
+Kalee,23,378,13850,"arid, temperate, tropical",1,"rainforests, cliffs, canyons, seas",null,4000000000,null
+Umbara,null,null,null,null,null,null,null,null,null
+Tatooine,23,304,10465,arid,1 standard,desert,1,200000,tatooine.jpg
+Jakku,null,null,null,null,null,deserts,null,null,null

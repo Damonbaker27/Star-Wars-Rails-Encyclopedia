@@ -8,7 +8,7 @@ Owen Lars,178,120,"brown, grey",light,blue,52,male,Tatooine,Human,owenlars.jpg
 Beru Whitesun lars,165,75,brown,light,blue,47,female,Tatooine,Human,beru.jpg
 R5-D4,97,32,null,"white, red",red,null,none,Tatooine,Droid,r5-d4.jpg
 Biggs Darklighter,183,84,black,light,brown,24,male,Tatooine,Human,biggs.jpg
-Obi-Wan Kenobi,182,77,"auburn, white",fair,blue-gray,57,male,Stewjon,Human
+Obi-Wan Kenobi,182,77,"auburn, white",fair,blue-gray,57,male,Stewjon,Human,benkenobi.jpg
 Anakin Skywalker,188,84,blond,fair,blue,41.9,male,Tatooine,Human,anakin.jpg
 Wilhuff Tarkin,180,null,"auburn, grey",fair,blue,64,male,Eriadu,Human,wilhuffTarkin.jpg
 Chewbacca,228,112,brown,unknown,blue,200,male,Kashyyyk,Wookiee,chewbacca.jpg
@@ -24,15 +24,15 @@ IG-88,200,140,none,metal,red,15,none,null,Droid,ig-88.jpg
 Bossk,190,113,none,green,red,53,male,Trandosha,Trandoshan,bossk.jpg
 Lando Calrissian,177,79,black,dark,brown,31,male,Socorro,Human,lando.jpg
 Lobot,175,79,none,light,blue,37,male,Bespin,Human,null
-Ackbar,180,83,none,brown mottle,orange,41,male,Mon Cala,Mon Calamari,null
-Mon Mothma,150,null,auburn,fair,blue,48,female,Chandrila,Human,null
+Ackbar,180,83,none,brown mottle,orange,41,male,Mon Cala,Mon Calamari,ackbar.jpg
+Mon Mothma,150,null,auburn,fair,blue,48,female,Chandrila,Human,monMothma.jpg
 Arvel Crynyd,null,null,brown,fair,brown,null,male,null,Human,null
 Wicket Systri Warrick,88,20,brown,brown,brown,8,male,Endor,Ewok,null
 Nien Nunb,160,68,none,grey,black,null,male,Sullust,Sullustan,null
-Qui-Gon Jinn,193,89,brown,fair,blue,92,male,null,Human,null
+Qui-Gon Jinn,193,89,brown,fair,blue,92,male,null,Human,qui-gon.jpg
 Nute Gunray,191,90,none,mottled green,red,null,male,Cato Neimoidia,Neimodian,null
 Finis Valorum,170,null,blond,fair,blue,91,male,Coruscant,Human,null
-Jar Jar Binks,196,66,none,orange,orange,52,male,Naboo,Gungan,null
+Jar Jar Binks,196,66,none,orange,orange,52,male,Naboo,Gungan,jarjar.jpg
 Roos Tarpals,224,82,none,grey,orange,null,male,Naboo,Gungan,null
 Rugor nullss,206,null,none,green,orange,null,male,Naboo,Gungan,null
 Ric Olié,183,null,brown,fair,blue,null,null,Naboo,null,null
@@ -40,13 +40,13 @@ Watto,137,null,black,"blue, grey",yellow,null,male,Toydaria,Toydarian,null
 Sebulba,112,40,none,"grey, red",orange,null,male,Malastare,Dug,null
 Quarsh Panullka,183,null,black,dark,brown,62,null,Naboo,null,null
 Shmi Skywalker,163,null,black,fair,brown,72,female,Tatooine,Human,null
-Darth Maul,175,80,none,red,yellow,54,male,Dathomir,Zabrak,null
+Darth Maul,175,80,none,red,yellow,54,male,Dathomir,Zabrak,darthmaul.jpg
 Bib Fortunull,180,null,none,pale,pink,null,male,Ryloth,Twi'lek,null
 Ayla Secura,178,55,none,blue,hazel,48,female,Ryloth,Twi'lek,null
 Dud Bolt,94,45,none,"blue, grey",yellow,null,male,Vulpter,Vulptereen,null
 Gasgano,122,null,none,"white, blue",black,null,male,Troiken,Xexto,null
 Ben Quadinullros,163,65,none,"grey, green, yellow",orange,null,male,Tund,Toong,null
-Mace Windu,188,84,none,dark,brown,72,male,Haruun Kal,Human,null
+Mace Windu,188,84,none,dark,brown,72,male,Haruun Kal,Human,maceWindu.jpg
 Ki-Adi-Mundi,198,82,white,pale,yellow,92,male,Cerea,Cerean,null
 Kit Fisto,196,87,none,green,black,null,male,Glee Anselm,nullutolan,null
 Eeth Koth,171,null,black,brown,brown,null,male,Iridonia,Zabrak,null

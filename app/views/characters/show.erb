@@ -1,6 +1,30 @@
-<h1 class = "title is-4"><%=@character.name%></h1>
 
-<h2 class  = "title is-5">Character description:</h2>
+<h1 class = "title is-4"><%=@character.name%></h1>
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-128x128">
+
+
+      <%if @character.imagepath == "null" %>
+      <%= image_tag("default.jpg")%>
+      <%else%>
+      <%= image_tag(@character.imagepath)%>
+      <%end%>
+
+
+
+
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+      </div>
+      <div class="media-content">
+      </div>
+    </div>
+    <div class="content">
+      <h2 class  = "title is-5">Character description:</h2>
 <h3 class = "title is-6">mass: <%=@character.mass%></h3>
 <h3 class = "title is-6">Birth year: <%=@character.birth_year%></h3>
 
@@ -14,9 +38,11 @@
 <% if @character.homeworld.name == "null" %>
   <h3 class = "title is-6">Homeworld: Unknown</h3>
 <% else %>
- <h3 class = "title is-6">Homeworld: <%=link_to @character.homeworld.name%></h3>
+ <h3 class = "title is-6">Homeworld: <%=link_to @character.homeworld.name, @character.homeworld%></h3>
 <% end %>
 
 <h3 class = "title is-6">eye color: <%=@character.eye_color%></h3>
 <h3 class = "title is-6">skin color: <%=@character.skin_color%></h3>
-
+    </div>
+  </div>
+</div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_01_201518) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_01_215040) do
   create_table "character_films", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -132,6 +132,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_01_201518) do
   add_foreign_key "character_films", "films", column: "films_id"
   add_foreign_key "character_star_ships", "characters", column: "characters_id"
   add_foreign_key "character_star_ships", "starships", column: "starships_id"
+  add_foreign_key "characters", "homeworlds"
   add_foreign_key "films", "character_films", column: "character_films_id"
   add_foreign_key "starships", "character_star_ships", column: "character_star_ships_id"
 end

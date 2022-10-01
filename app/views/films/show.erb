@@ -1,0 +1,35 @@
+<h1 class = "title is-4"><%=@film.name%></h1>
+
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-128x128">
+
+
+      <%if film.imagepath == "null" %>
+      <%= image_tag("default.jpg")%>
+      <%else%>
+      <%= image_tag(film.imagepath)%>
+      <%end%>
+
+
+
+
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+      </div>
+      <div class="media-content">
+      </div>
+    </div>
+    <div class="content">
+      <h2 class  = "title is-5">opening crawl:</h2>
+      <h3 class = "title is-6">mass: <%=film.%></h3>
+
+
+
+
+    </div>
+  </div>
+</div>

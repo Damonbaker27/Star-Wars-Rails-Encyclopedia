@@ -63,7 +63,8 @@ homeworlds.each do |p|
     gravity:         p["gravity"],
     terrain:         p["terrain"],
     surface_water:   p["surface_water"],
-    population:      p["population"]
+    population:      p["population"],
+    imagepath:       p["image_path"]
   )
 end
 race.each do |s|
@@ -82,7 +83,6 @@ race.each do |s|
 end
 
 films.each do |f|
-  puts f["image_path"]
   film = Film.create(
     name:          f["title"],
     opening_crawl: f["opening_crawl"],
