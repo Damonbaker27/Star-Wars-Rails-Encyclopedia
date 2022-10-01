@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_30_220608) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_01_201518) do
   create_table "character_films", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -46,6 +46,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_220608) do
     t.datetime "updated_at", null: false
     t.integer "homeworld_id"
     t.integer "race_id"
+    t.string "imagepath"
     t.index ["homeworld_id"], name: "index_characters_on_homeworld_id"
     t.index ["race_id"], name: "index_characters_on_race_id"
   end
@@ -58,6 +59,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_220608) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "character_films_id"
+    t.string "imagepath"
     t.index ["character_films_id"], name: "index_films_on_character_films_id"
   end
 
@@ -73,6 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_220608) do
     t.integer "population"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "imagepath"
   end
 
   create_table "races", force: :cascade do |t|

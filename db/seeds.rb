@@ -82,14 +82,15 @@ race.each do |s|
 end
 
 films.each do |f|
+  puts f["image_path"]
   film = Film.create(
     name:          f["title"],
     opening_crawl: f["opening_crawl"],
     director:      f["director"],
-    release_date:  f["release_date"]
+    release_date:  f["release_date"],
+    imagepath:     f["image_path"]
   )
 end
-
 starships.each do |st|
   starship = Starship.create(
     name:                   st["name"],
@@ -110,7 +111,6 @@ end
 
 characters.each do |c|
   homeworld = Homeworld.find_or_create_by(name: c["homeworld"])
-
   homeworld.characters.find_or_create_by(
     name:       c["name"],
     height:     c["height"],
@@ -119,7 +119,8 @@ characters.each do |c|
     skin_color: c["skin_color"],
     eye_color:  c["eye_color"],
     birth_year: c["birth_year"],
-    gender:     c["gender"]
+    gender:     c["gender"],
+    imagepath:  c["image_path"]
   )
   race = Race.find_or_create_by(name: c["species"])
 
@@ -131,21 +132,21 @@ characters.each do |c|
     skin_color: c["skin_color"],
     eye_color:  c["eye_color"],
     birth_year: c["birth_year"],
-    gender:     c["gender"]
+    gender:     c["gender"],
+    imagepath:  c["image_path"]
   )
 end
 
 character_Films.each do |cf|
   # puts " the film is #{cf['films']} and the char is #{cf['name']}"
-  films = Film.find_or_create_by(name: cf["films"])
-  char = Character.find_or_create_by(name: cf["name"])
+  films = Film.first_or_create(name: cf["films"])
+  char = Character.first_or_create(name: cf["name"])
   # puts "the character is #{char['name']} and the movie is #{films['name']}"
   CharacterFilm.create(
     character_id: char["id"],
     film_id:      films["id"]
   )
 end
-
 character_starships.each do |cs|
   star_Ship = Starship.find_or_create_by(name: cs["starship"])
   char = Character.find_or_create_by(name: cs["name"])
