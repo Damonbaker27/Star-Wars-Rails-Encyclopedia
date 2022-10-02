@@ -3,19 +3,17 @@
 <div class="card">
   <div class="card-image">
     <figure class="image is-128x128">
-
-
-      <%if film.imagepath == "null" %>
+      <%if @film.imagepath == "null" %>
       <%= image_tag("default.jpg")%>
       <%else%>
-      <%= image_tag(film.imagepath)%>
+      <%= image_tag(@film.imagepath)%>
       <%end%>
-
-
-
-
     </figure>
   </div>
+</div>
+
+
+</div>
   <div class="card-content">
     <div class="media">
       <div class="media-left">
@@ -24,12 +22,13 @@
       </div>
     </div>
     <div class="content">
-      <h2 class  = "title is-5">opening crawl:</h2>
-      <h3 class = "title is-6">mass: <%=film.%></h3>
-
-
-
-
+      <div class = "box">
+      <p>film opening crawl: <%=@film.opening_crawl%></p>
+      <h3 class = "title is-6">director: <%=@film.director%></h3>
+      <h3 class = "title is-6">release date: <%=@film.release_date%></h3>
+      </div>
     </div>
   </div>
 </div>
+
+
