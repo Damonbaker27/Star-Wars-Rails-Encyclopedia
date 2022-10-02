@@ -1,0 +1,10 @@
+<h1> Star Wars species</h1>
+
+<ul>
+  <% @races.each do |race| %>
+    <li>
+        <%= link_to race.name, race %>
+      </a>
+    </li>
+  <% end %>
+</ul>
