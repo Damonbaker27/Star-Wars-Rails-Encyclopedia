@@ -2,9 +2,25 @@
 
 <ul>
   <% @starships.each do |starship| %>
-    <li>
-        <%= link_to starship.name, starship %>
-      </a>
-    </li>
+
+
+  <div class="card">
+  <div class="card-image">
+    <figure>
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" width="500" height="800" >
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+
+      </div>
+      <div class="media-content">
+        <p class="title is-4"><%=link_to starship.name, starship%></p>
+      </div>
+    </div>
+  </div>
+</div>
   <% end %>
 </ul>
+
