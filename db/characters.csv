@@ -1,88 +1,88 @@
-name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld,species,image_path
-Luke Skywalker,172,77,blond,fair,blue,19,male,Tatooine,Human,luke.jpg
-C-3PO,167,75,null,gold,yellow,112,none,Tatooine,Droid,C3P0.jpg
-R2-D2,96,32,null,"white, blue",red,33,none,Naboo,Droid,r2d2.jpg
-Darth Vader,202,136,none,white,yellow,41.9,male,Tatooine,Human,darthvader.jpg
-Leia Organa,150,49,brown,light,brown,19,female,Alderaan,Human,leia.jpg
-Owen Lars,178,120,"brown, grey",light,blue,52,male,Tatooine,Human,owenlars.jpg
-Beru Whitesun lars,165,75,brown,light,blue,47,female,Tatooine,Human,beru.jpg
-R5-D4,97,32,null,"white, red",red,null,none,Tatooine,Droid,r5-d4.jpg
-Biggs Darklighter,183,84,black,light,brown,24,male,Tatooine,Human,biggs.jpg
-Obi-Wan Kenobi,182,77,"auburn, white",fair,blue-gray,57,male,Stewjon,Human,benkenobi.jpg
-Anakin Skywalker,188,84,blond,fair,blue,41.9,male,Tatooine,Human,anakin.jpg
-Wilhuff Tarkin,180,null,"auburn, grey",fair,blue,64,male,Eriadu,Human,wilhuffTarkin.jpg
-Chewbacca,228,112,brown,unknown,blue,200,male,Kashyyyk,Wookiee,chewbacca.jpg
-Han Solo,180,80,brown,fair,brown,29,male,Corellia,Human,han solo.jpg
-Greedo,173,74,null,green,black,44,male,Rodia,Rodian,greedo.jpg
-Jabba Desilijic Tiure,175,1358,null,"green-tan, brown",orange,600,hermaphroditic,null Hutta,Hutt,jabba.jpg
-Wedge Antilles,170,77,brown,fair,hazel,21,male,Corellia,Human,wedgeantilles.jpg
-Jek Tono Porkins,180,110,brown,fair,blue,null,male,Bestine IV,Human,null
-Yoda,66,17,white,green,brown,896,male,null,Yoda's species,yoda.jpg
-Palpatine,170,75,grey,pale,yellow,82,male,Naboo,Human,palpatine.jpg
-Boba Fett,183,78.2,black,fair,brown,31.5,male,Kamino,Human,bobafett.jpg
-IG-88,200,140,none,metal,red,15,none,null,Droid,ig-88.jpg
-Bossk,190,113,none,green,red,53,male,Trandosha,Trandoshan,bossk.jpg
-Lando Calrissian,177,79,black,dark,brown,31,male,Socorro,Human,lando.jpg
-Lobot,175,79,none,light,blue,37,male,Bespin,Human,null
-Ackbar,180,83,none,brown mottle,orange,41,male,Mon Cala,Mon Calamari,ackbar.jpg
-Mon Mothma,150,null,auburn,fair,blue,48,female,Chandrila,Human,monMothma.jpg
-Arvel Crynyd,null,null,brown,fair,brown,null,male,null,Human,null
-Wicket Systri Warrick,88,20,brown,brown,brown,8,male,Endor,Ewok,null
-Nien Nunb,160,68,none,grey,black,null,male,Sullust,Sullustan,null
-Qui-Gon Jinn,193,89,brown,fair,blue,92,male,null,Human,qui-gon.jpg
-Nute Gunray,191,90,none,mottled green,red,null,male,Cato Neimoidia,Neimodian,null
-Finis Valorum,170,null,blond,fair,blue,91,male,Coruscant,Human,null
-Jar Jar Binks,196,66,none,orange,orange,52,male,Naboo,Gungan,jarjar.jpg
-Roos Tarpals,224,82,none,grey,orange,null,male,Naboo,Gungan,null
-Rugor nullss,206,null,none,green,orange,null,male,Naboo,Gungan,null
-Ric Olié,183,null,brown,fair,blue,null,null,Naboo,null,null
-Watto,137,null,black,"blue, grey",yellow,null,male,Toydaria,Toydarian,null
-Sebulba,112,40,none,"grey, red",orange,null,male,Malastare,Dug,null
-Quarsh Panullka,183,null,black,dark,brown,62,null,Naboo,null,null
-Shmi Skywalker,163,null,black,fair,brown,72,female,Tatooine,Human,null
-Darth Maul,175,80,none,red,yellow,54,male,Dathomir,Zabrak,darthmaul.jpg
-Bib Fortunull,180,null,none,pale,pink,null,male,Ryloth,Twi'lek,null
-Ayla Secura,178,55,none,blue,hazel,48,female,Ryloth,Twi'lek,null
-Dud Bolt,94,45,none,"blue, grey",yellow,null,male,Vulpter,Vulptereen,null
-Gasgano,122,null,none,"white, blue",black,null,male,Troiken,Xexto,null
-Ben Quadinullros,163,65,none,"grey, green, yellow",orange,null,male,Tund,Toong,null
-Mace Windu,188,84,none,dark,brown,72,male,Haruun Kal,Human,maceWindu.jpg
-Ki-Adi-Mundi,198,82,white,pale,yellow,92,male,Cerea,Cerean,null
-Kit Fisto,196,87,none,green,black,null,male,Glee Anselm,nullutolan,null
-Eeth Koth,171,null,black,brown,brown,null,male,Iridonia,Zabrak,null
-Adi Gallia,184,50,none,dark,blue,null,female,Coruscant,Tholothian,null
-Saesee Tiin,188,null,none,pale,orange,null,male,Iktotch,Iktotchi,null
-Yarael Poof,264,null,none,white,yellow,null,male,Quermia,Quermian,null
-Plo Koon,188,80,none,orange,black,22,male,Dorin,Kel Dor,null
-Mas Amedda,196,null,none,blue,blue,null,male,Champala,Chagrian,null
-Gregar Typho,185,85,black,dark,brown,null,male,Naboo,Human,null
-Cordé,157,null,brown,light,brown,null,female,Naboo,Human,null
-Cliegg Lars,183,null,brown,fair,blue,82,male,Tatooine,Human,null
-Poggle the Lesser,183,80,none,green,yellow,null,male,Geonosis,Geonosian,null
-Luminullra Unduli,170,56.2,black,yellow,blue,58,female,Mirial,Mirialan,null
-Barriss Offee,166,50,black,yellow,blue,40,female,Mirial,Mirialan,null
-Dormé,165,null,brown,light,brown,null,female,Naboo,Human,null
-Dooku,193,80,white,fair,brown,102,male,Serenno,Human,null
-Bail Prestor Organull,191,null,black,tan,brown,67,male,Alderaan,Human,null
-Jango Fett,183,79,black,tan,brown,66,male,Concord Dawn,Human,null
-Zam Wesell,168,55,blonde,"fair, green, yellow",yellow,null,female,Zolan,Clawdite,null
-Dexter Jettster,198,102,none,brown,yellow,null,male,Ojom,Besalisk,null
-Lama Su,229,88,none,grey,black,null,male,Kamino,Kaminoan,null
-Taun We,213,null,none,grey,black,null,female,Kamino,Kaminoan,null
-Jocasta Nu,167,null,white,fair,blue,null,female,Coruscant,Human,null
-Ratts Tyerell,79,15,none,"grey, blue",unknown,null,male,Aleen Minor,Aleenull,null
-R4-P17,96,null,none,"silver, red","red, blue",null,none,null,Droid,null
-Wat Tambor,193,48,none,"green, grey",unknown,null,male,Skako,Skakoan,null
-San Hill,191,null,none,grey,gold,null,male,Muunilinst,Muun,null
-Shaak Ti,178,57,none,"red, blue, white",black,null,female,Shili,Togruta,null
-Grievous,216,159,none,"brown, white","green, yellow",null,male,Kalee,Kaleesh,null
-Tarfful,234,136,brown,brown,blue,null,male,Kashyyyk,Wookiee,null
-Raymus Antilles,188,79,brown,light,brown,null,male,Alderaan,Human,null
-Sly Moore,178,48,none,pale,white,null,null,Umbara,null,null
-Tion Medon,206,80,none,grey,black,null,male,Utapau,Pau'an,null
-Finn,null,null,black,dark,dark,null,male,null,Human,null
-Rey,null,null,brown,light,hazel,null,female,null,Human,null
-Poe Dameron,null,null,brown,light,brown,null,male,null,Human,null
-BB8,null,null,none,none,black,null,none,null,Droid,null
-Captain Phasma,null,null,unknown,unknown,unknown,null,null,null,null,null
-Padmé Amidala,165,45,brown,light,brown,46,female,Naboo,Human,null
+name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld,species,image_path,starships
+Luke Skywalker,172,77,blond,fair,blue,19,male,Tatooine,Human,luke.jpg,"X-wing,Imperial shuttle"
+C-3PO,167,75,null,gold,yellow,112,none,Tatooine,Droid,C3P0.jpg,"no ship"
+R2-D2,96,32,null,"white, blue",red,33,none,Naboo,Droid,r2d2.jpg,"no ship"
+Darth Vader,202,136,none,white,yellow,41.9,male,Tatooine,Human,darthvader.jpg,TIE Advanced x1
+Leia Organa,150,49,brown,light,brown,19,female,Alderaan,Human,leia.jpg,"no ship"
+Owen Lars,178,120,"brown, grey",light,blue,52,male,Tatooine,Human,owenlars.jpg,"no ship"
+Beru Whitesun lars,165,75,brown,light,blue,47,female,Tatooine,Human,beru.jpg,"no ship"
+R5-D4,97,32,null,"white, red",red,null,none,Tatooine,Droid,r5-d4.jpg,"no ship"
+Biggs Darklighter,183,84,black,light,brown,24,male,Tatooine,Human,biggs.jpg,X-wing
+Obi-Wan Kenobi,182,77,"auburn, white",fair,blue-gray,57,male,Stewjon,Human,benkenobi.jpg,"Jedi starfighter,Trade Federation cruiser,Naboo star skiff,Jedi Interceptor,Belbullab-22 starfighter"
+Anakin Skywalker,188,84,blond,fair,blue,41.9,male,Tatooine,Human,anakin.jpg,"Trade Federation cruiser,Jedi Interceptor,Naboo fighter"
+Wilhuff Tarkin,180,null,"auburn, grey",fair,blue,64,male,Eriadu,Human,wilhuffTarkin.jpg,"no ship"
+Chewbacca,228,112,brown,unknown,blue,200,male,Kashyyyk,Wookiee,chewbacca.jpg,"Millennium Falcon,Imperial shuttle"
+Han Solo,180,80,brown,fair,brown,29,male,Corellia,Human,han solo.jpg,"Millennium Falcon,Imperial shuttle"
+Greedo,173,74,null,green,black,44,male,Rodia,Rodian,greedo.jpg,"no ship"
+Jabba Desilijic Tiure,175,1358,null,"green-tan, brown",orange,600,hermaphroditic,null Hutta,Hutt,jabba.jpg,"no ship"
+Wedge Antilles,170,77,brown,fair,hazel,21,male,Corellia,Human,wedgeantilles.jpg,X-wing
+Jek Tono Porkins,180,110,brown,fair,blue,null,male,Bestine IV,Human,null,X-wing
+Yoda,66,17,white,green,brown,896,male,null,Yoda's species,yoda.jpg,"no ship"
+Palpatine,170,75,grey,pale,yellow,82,male,Naboo,Human,palpatine.jpg,"no ship"
+Boba Fett,183,78.2,black,fair,brown,31.5,male,Kamino,Human,bobafett.jpg,Slave 1
+IG-88,200,140,none,metal,red,15,none,null,Droid,ig-88.jpg,"no ship"
+Bossk,190,113,none,green,red,53,male,Trandosha,Trandoshan,bossk.jpg,"no ship"
+Lando Calrissian,177,79,black,dark,brown,31,male,Socorro,Human,lando.jpg,Millennium Falcon
+Lobot,175,79,none,light,blue,37,male,Bespin,Human,null,"no ship"
+Ackbar,180,83,none,brown mottle,orange,41,male,Mon Cala,Mon Calamari,ackbar.jpg,"no ship"
+Mon Mothma,150,null,auburn,fair,blue,48,female,Chandrila,Human,monMothma.jpg,"no ship"
+Arvel Crynyd,null,null,brown,fair,brown,null,male,null,Human,null,A-wing
+Wicket Systri Warrick,88,20,brown,brown,brown,8,male,Endor,Ewok,null,"no ship"
+Nien Nunb,160,68,none,grey,black,null,male,Sullust,Sullustan,null,Millennium Falcon
+Qui-Gon Jinn,193,89,brown,fair,blue,92,male,null,Human,qui-gon.jpg,"no ship"
+Nute Gunray,191,90,none,mottled green,red,null,male,Cato Neimoidia,Neimodian,null,null
+Finis Valorum,170,null,blond,fair,blue,91,male,Coruscant,Human,null,"no ship"
+Jar Jar Binks,196,66,none,orange,orange,52,male,Naboo,Gungan,jarjar.jpg,"no ship"
+Roos Tarpals,224,82,none,grey,orange,null,male,Naboo,Gungan,null,"no ship"
+Rugor nullss,206,null,none,green,orange,null,male,Naboo,Gungan,null,"no ship"
+Ric Olié,183,null,brown,fair,blue,null,null,Naboo,null,null,Naboo Royal Starship
+Watto,137,null,black,"blue, grey",yellow,null,male,Toydaria,Toydarian,null,"no ship"
+Sebulba,112,40,none,"grey, red",orange,null,male,Malastare,Dug,null,"no ship"
+Quarsh Panullka,183,null,black,dark,brown,62,null,Naboo,null,null,"no ship"
+Shmi Skywalker,163,null,black,fair,brown,72,female,Tatooine,Human,null,"no ship"
+Darth Maul,175,80,none,red,yellow,54,male,Dathomir,Zabrak,darthmaul.jpg,Scimitar
+Bib Fortunull,180,null,none,pale,pink,null,male,Ryloth,Twi'lek,null,"no ship"
+Ayla Secura,178,55,none,blue,hazel,48,female,Ryloth,Twi'lek,null,"no ship"
+Dud Bolt,94,45,none,"blue, grey",yellow,null,male,Vulpter,Vulptereen,null,"no ship"
+Gasgano,122,null,none,"white, blue",black,null,male,Troiken,Xexto,null,"no ship"
+Ben Quadinullros,163,65,none,"grey, green, yellow",orange,null,male,Tund,Toong,null,"no ship"
+Mace Windu,188,84,none,dark,brown,72,male,Haruun Kal,Human,maceWindu.jpg,"no ship"
+Ki-Adi-Mundi,198,82,white,pale,yellow,92,male,Cerea,Cerean,null,"no ship"
+Kit Fisto,196,87,none,green,black,null,male,Glee Anselm,nullutolan,null,"no ship"
+Eeth Koth,171,null,black,brown,brown,null,male,Iridonia,Zabrak,null,"no ship"
+Adi Gallia,184,50,none,dark,blue,null,female,Coruscant,Tholothian,null,"no ship"
+Saesee Tiin,188,null,none,pale,orange,null,male,Iktotch,Iktotchi,null,"no ship"
+Yarael Poof,264,null,none,white,yellow,null,male,Quermia,Quermian,null,"no ship"
+Plo Koon,188,80,none,orange,black,22,male,Dorin,Kel Dor,null,Jedi starfighter
+Mas Amedda,196,null,none,blue,blue,null,male,Champala,Chagrian,null,"no ship"
+Gregar Typho,185,85,black,dark,brown,null,male,Naboo,Human,null,Naboo fighter
+Cordé,157,null,brown,light,brown,null,female,Naboo,Human,null,"no ship"
+Cliegg Lars,183,null,brown,fair,blue,82,male,Tatooine,Human,null,"no ship"
+Poggle the Lesser,183,80,none,green,yellow,null,male,Geonosis,Geonosian,null,"no ship"
+Luminullra Unduli,170,56.2,black,yellow,blue,58,female,Mirial,Mirialan,null,"no ship"
+Barriss Offee,166,50,black,yellow,blue,40,female,Mirial,Mirialan,null,"no ship"
+Dormé,165,null,brown,light,brown,null,female,Naboo,Human,null,"no ship"
+Dooku,193,80,white,fair,brown,102,male,Serenno,Human,null,"no ship"
+Bail Prestor Organull,191,null,black,tan,brown,67,male,Alderaan,Human,null,"no ship"
+Jango Fett,183,79,black,tan,brown,66,male,Concord Dawn,Human,null,"no ship"
+Zam Wesell,168,55,blonde,"fair, green, yellow",yellow,null,female,Zolan,Clawdite,null,"no ship"
+Dexter Jettster,198,102,none,brown,yellow,null,male,Ojom,Besalisk,null,"no ship"
+Lama Su,229,88,none,grey,black,null,male,Kamino,Kaminoan,null,"no ship"
+Taun We,213,null,none,grey,black,null,female,Kamino,Kaminoan,null,"no ship"
+Jocasta Nu,167,null,white,fair,blue,null,female,Coruscant,Human,null,"no ship"
+Ratts Tyerell,79,15,none,"grey, blue",unknown,null,male,Aleen Minor,Aleenull,null,"no ship"
+R4-P17,96,null,none,"silver, red","red, blue",null,none,null,Droid,null,"no ship"
+Wat Tambor,193,48,none,"green, grey",unknown,null,male,Skako,Skakoan,null,"no ship"
+San Hill,191,null,none,grey,gold,null,male,Muunilinst,Muun,null,"no ship"
+Shaak Ti,178,57,none,"red, blue, white",black,null,female,Shili,Togruta,null,"no ship"
+Grievous,216,159,none,"brown, white","green, yellow",null,male,Kalee,Kaleesh,null,"no ship"
+Tarfful,234,136,brown,brown,blue,null,male,Kashyyyk,Wookiee,null,"no ship"
+Raymus Antilles,188,79,brown,light,brown,null,male,Alderaan,Human,null,"no ship"
+Sly Moore,178,48,none,pale,white,null,null,Umbara,null,null,"no ship"
+Tion Medon,206,80,none,grey,black,null,male,Utapau,Pau'an,null,"no ship"
+Finn,null,null,black,dark,dark,null,male,null,Human,null,"no ship"
+Rey,null,null,brown,light,hazel,null,female,null,Human,null,"no ship"
+Poe Dameron,null,null,brown,light,brown,null,male,null,Human,null,T-70 X-wing fighter
+BB8,null,null,none,none,black,null,none,null,Droid,null,"no ship"
+Captain Phasma,null,null,unknown,unknown,unknown,null,null,null,null,null,"no ship"
+Padmé Amidala,165,45,brown,light,brown,46,female,Naboo,Human,null,"H-type Nubian yacht,Naboo star skiff,Naboo fighter"

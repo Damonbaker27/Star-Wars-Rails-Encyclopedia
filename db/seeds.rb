@@ -10,13 +10,13 @@ require "csv"
 require "json"
 require "json_csv"
 
+CharacterFilm.delete_all
+CharacterStarship.delete_all
 Character.delete_all
 Homeworld.delete_all
 Race.delete_all
 Film.delete_all
 Starship.delete_all
-CharacterFilm.delete_all
-CharacterStarShip.delete_all
 
 puts "running seed"
 # Character csv 1/7
@@ -50,9 +50,9 @@ csv_character_Film_data = File.read(character_Film_file)
 character_Films = CSV.parse(csv_character_Film_data, headers: true, encoding: "utf-8")
 
 # characterStarship.csv 7/7
-character_starship_file = Rails.root.join("db/characterStarship.csv")
-csv_character_starship_data = File.read(character_starship_file)
-character_starships = CSV.parse(csv_character_starship_data, headers: true, encoding: "utf-8")
+# character_starship_file = Rails.root.join("db/characterStarship.csv")
+# csv_character_starship_data = File.read(character_starship_file)
+# character_starships = CSV.parse(csv_character_starship_data, headers: true, encoding: "utf-8")
 homeworlds.each do |p|
   homeworld = Homeworld.create(
     name:            p["name"],
@@ -111,7 +111,7 @@ end
 
 characters.each do |c|
   homeworld = Homeworld.find_or_create_by(name: c["homeworld"])
-  homeworld.characters.find_or_create_by(
+  character = homeworld.characters.find_or_create_by(
     name:       c["name"],
     height:     c["height"],
     mass:       c["mass"],
@@ -122,41 +122,48 @@ characters.each do |c|
     gender:     c["gender"],
     imagepath:  c["image_path"]
   )
-  race = Race.find_or_create_by(name: c["species"])
 
-  race.characters.find_or_create_by(
-    name:       c["name"],
-    height:     c["height"],
-    mass:       c["mass"],
-    hair_color: c["hair_color"],
-    skin_color: c["skin_color"],
-    eye_color:  c["eye_color"],
-    birth_year: c["birth_year"],
-    gender:     c["gender"],
-    imagepath:  c["image_path"]
-  )
+  starships = c["starships"].split(",").map(&:strip)
+
+  starships.each do |starship|
+    star = Starship.find_or_create_by(name: starship)
+    CharacterStarship.create(character: character, starship: star)
+  end
+
+  # race = Race.find_or_create_by(name: c["species"])
+  # race.characters.find_or_create_by(
+  # name:       c["name"],
+  # height:     c["height"],
+  # mass:       c["mass"],
+  # hair_color: c["hair_color"],
+  # skin_color: c["skin_color"],
+  # eye_color:  c["eye_color"],
+  # birth_year: c["birth_year"],
+  # gender:     c["gender"],
+  # imagepath:  c["image_path"]
+  # )
 end
 
-character_Films.each do |cf|
-  # puts " the film is #{cf['films']} and the char is #{cf['name']}"
-  films = Film.first_or_create(name: cf["films"])
-  char = Character.first_or_create(name: cf["name"])
-  # puts "the character is #{char['name']} and the movie is #{films['name']}"
-  CharacterFilm.create(
-    character_id: char["id"],
-    film_id:      films["id"]
-  )
-end
-character_starships.each do |cs|
-  star_Ship = Starship.find_or_create_by(name: cs["starship"])
-  char = Character.find_or_create_by(name: cs["name"])
-  # puts "#{star_Ship['id']}:#{star_Ship['name']}---> #{char['id']}:#{char['name']}"
+# character_Films.each do |cf|
+# puts " the film is #{cf['films']} and the char is #{cf['name']}"
+# #films = Film.first_or_create(name: cf["films"])
+# char = Character.first_or_create(name: cf["name"])
+# puts "the character is #{char['name']} and the movie is #{films['name']}"
+# CharacterFilm.create(
+# character_id: char["id"],
+# film_id:      films["id"]
+# )
+# end
+# character_starships.each do |cs|
+# star_Ship = Starship.find_or_create_by(name: cs["starship"])
+# char = Character.find_or_create_by(name: cs["name"])
+# puts "#{star_Ship['id']}:#{star_Ship['name']}---> #{char['id']}:#{char['name']}"
 
-  CharacterStarShip.find_or_create_by(
-    starship_id:  star_Ship["id"],
-    character_id: char["id"]
-  )
-end
+# CharacterStarShip.find_or_create_by(
+# starship_id:  star_Ship["id"],
+# character_id: char["id"]
+# )
+# end
 
 puts "imported #{Character.count} new characters"
 puts "imported #{Homeworld.count} new homeworlds"
@@ -164,5 +171,5 @@ puts "imported #{Race.count} new race"
 puts "imported #{Film.count} new films"
 puts "imported #{Starship.count} new starships"
 puts "imported #{Race.count} new races"
-puts "imported #{CharacterStarShip.count} new character starships"
 puts "imported #{CharacterFilm.count} new character films"
+puts "imported #{CharacterStarship.count} new character starships"

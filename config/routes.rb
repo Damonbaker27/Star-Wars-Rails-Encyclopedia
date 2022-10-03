@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :homeworlds
   resources :films
   resources :races
+  get "about/index"
   # get "characters/" to: 'characters/index' as: character_path
   # get "starships/index"
   get "races/index", to: "races#index"

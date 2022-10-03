@@ -6,12 +6,12 @@ class CreateStarships < ActiveRecord::Migration[7.0]
       t.string :manufacturer
       t.integer :cost_in_credits
       t.integer :length
-      t.integer :max_atmospgering_speed
+      t.string :max_atmospgering_speed
       t.integer :crew
       t.integer :passengers
       t.integer :cargo_capacity
       t.string :consumables
-      t.integer :hyperdrive_rating
+      t.string :hyperdrive_rating
       t.integer :mglt
       t.string :starship_class
 

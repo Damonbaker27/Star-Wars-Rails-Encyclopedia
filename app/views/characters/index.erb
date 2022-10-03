@@ -1,27 +1,18 @@
-<h1> Star Wars Characters</h1>
+<% @characters.each do |character| %>
 
-<ul>
-  <% @characters.each do |character| %>
-  <div class="card">
-  <div class="card-image">
-    <figure>
-      <p><%character.imagepath%></p>
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-      <div class="media-left">
+    <div class="card">
+      <div class= "card-image">
+      <h2 class = "title is-3"><%=link_to character.name, character%></h2>
 
-      </div>
-      <div class="media-content">
-        <p class="title is-4"><%=link_to character.name, character%></p>
+      <%if character.imagepath == "null"%>
+        <%=link_to character.name, character%>
+      <%else%>
+        <img src="assets/<%=character.imagepath%>">
+      <% end %>
+
       </div>
     </div>
-  </div>
-</div>
-
-</ul>
-  <% end %>
+<% end %>
 
 
 
@@ -36,4 +27,7 @@
 
 
 
-</ul>
+
+
+
+
