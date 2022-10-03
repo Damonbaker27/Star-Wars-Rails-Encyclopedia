@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_03_172204) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_03_205306) do
   create_table "character_films", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -95,14 +95,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_03_172204) do
     t.string "manufacturer"
     t.integer "cost_in_credits"
     t.integer "length"
-    t.string "max_atmospgering_speed"
+    t.integer "max_atmospgering_speed"
     t.integer "crew"
     t.integer "passengers"
     t.integer "cargo_capacity"
     t.string "consumables"
-    t.string "hyperdrive_rating"
+    t.integer "hyperdrive_rating"
     t.integer "mglt"
     t.string "starship_class"
+    t.string "imagepath"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

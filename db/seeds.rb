@@ -105,7 +105,8 @@ starships.each do |st|
     consumables:            st["consumables"],
     hyperdrive_rating:      st["hyperdrive_rating"],
     mglt:                   st["mglt"],
-    starship_class:         st["starship_class"]
+    starship_class:         st["starship_class"],
+    imagepath:              st["imagepath"]
   )
 end
 

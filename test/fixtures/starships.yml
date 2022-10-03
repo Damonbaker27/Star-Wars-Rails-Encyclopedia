@@ -6,14 +6,15 @@ one:
   manufacturer: MyString
   cost_in_credits: 1
   length: 1
-  max_atmospgering_speed: MyString
+  max_atmospgering_speed: 1
   crew: 1
   passengers: 1
   cargo_capacity: 1
   consumables: MyString
-  hyperdrive_rating: MyString
+  hyperdrive_rating: 1
   mglt: 1
   starship_class: MyString
+  imagepath: MyString
 
 two:
   name: MyString
@@ -21,11 +22,12 @@ two:
   manufacturer: MyString
   cost_in_credits: 1
   length: 1
-  max_atmospgering_speed: MyString
+  max_atmospgering_speed: 1
   crew: 1
   passengers: 1
   cargo_capacity: 1
   consumables: MyString
-  hyperdrive_rating: MyString
+  hyperdrive_rating: 1
   mglt: 1
   starship_class: MyString
+  imagepath: MyString
