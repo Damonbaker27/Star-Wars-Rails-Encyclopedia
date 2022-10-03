@@ -5,12 +5,11 @@
     <%if @starship.imagepath == "null" %>
     <%= image_tag("default.jpg")%>
     <%else%>
-    <%= image_tag(@starship.imagepath, size:"450x500")%>
+    <%= image_tag(@starship.imagepath, size:"500x500")%>
     <%end%>
   </div>
   <div class="column">
     <div class="content">
-      <div class = "box">
       <h3 class = "title is-6">Model: <%=@starship.model%></p>
       <h3 class = "title is-6">Manufacturer: <%=@starship.manufacturer%></h3>
       <h3 class = "title is-6">Cost in credits: <%=@starship.cost_in_credits%></h3>
@@ -22,7 +21,6 @@
       <h3 class = "title is-6">Consumables on board: <%=@starship.consumables%></h3>
       <h3 class = "title is-6">Hyperdrive rating: <%=@starship.hyperdrive_rating%></h3>
       <h3 class = "title is-6">Starship class: <%=@starship.starship_class%></h3>
-      </div>
     </div>
       </div>
     </div>

@@ -33,6 +33,8 @@ gem "bulma-rails", "~> 0.9.3"
 
 gem 'sass-rails'
 
+gem 'kaminari'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"

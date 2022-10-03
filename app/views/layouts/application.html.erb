@@ -12,43 +12,34 @@
 
   <body>
   <section class ="section">
-  <div class = "container">
-  <h1 class = "title is-1"> Star Wars encyclopedia </h1>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <!-- navbar items, navbar burger... -->
-
-  </div>
-  <div class="navbar-menu">
-    <!-- navbar start, navbar end -->
-    <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-end">
-      <a class="navbar-item" href = "/">
-        Home
-      </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-item" href="/characters">
-          Characters
-        </a>
-
-        <a class="navbar-item" href="/homeworlds">
-          Planets
-        </a>
-
-        <a class="navbar-item" href="/races">
-          Species
-        </a>
-        <a class="navbar-item" href="/starships">
-          Starships
-        </a>
-        <a class="navbar-item" href="/films">
-          Films
-        </a>
-
-        <a class="navbar-item" href="/about/index">
-          About
-        </a>
-  </div>
+    <div class = "container">
+        <h1 class = "title is-1"> Star Wars encyclopedia </h1>
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+    </div>
+    <div class="navbar-menu">
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href = "/">
+              Home
+          </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-item" href="/characters">
+            Characters
+          </a>
+          <a class="navbar-item" href="/homeworlds">
+            Planets
+          </a>
+          <a class="navbar-item" href="/starships">
+            Starships
+          </a>
+          <a class="navbar-item" href="/films">
+            Films
+          </a>
+          <a class="navbar-item" href="/about/index">
+            About
+          </a>
+        </div>
 </nav>
     <%= yield %>
 </div>

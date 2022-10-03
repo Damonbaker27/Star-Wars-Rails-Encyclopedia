@@ -1,18 +1,103 @@
-<% @characters.each do |character| %>
+<section class="section">
+  <div class="container">
+    <div class="columns is-flex-wrap-wrap">
+      <% @characters.each do |character| %>
+        <div class ="column">
 
-    <div class="card">
-      <div class= "card-image">
-      <h2 class = "title is-3"><%=link_to character.name, character%></h2>
+        <div class="card">
 
-      <%if character.imagepath == "null"%>
-        <%=link_to character.name, character%>
-      <%else%>
-        <img src="assets/<%=character.imagepath%>">
-      <% end %>
+        </div>
 
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      <%end%>
     </div>
-<% end %>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class= "card">
+              <div class= "card-image has-text-centered px-6">
+                <%if character.imagepath == "null"%>
+                  <img src="assets/default.jpg" height="500" width= "500">
+                <%else%>
+                  <img src="assets/<%=character.imagepath%>" height="500" width= "500">
+                <% end %>
+              </div>
+              <footer class="card footer">
+                  <%=link_to character.name, character%>
+              </footer>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<h3 class= "title has-text-centered is-size-4"> Characters</h3>
+
+  <div class="container is-flex is-flex-direction-column">
+
+      <div>
+        <div class="columns mt-5 is-8 is-variable">
+
+        <% @characters.each do |character| %>
+          <div class="columns is-4-tablet is-3-desktop">
+
+          </div>
+        <% end %>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+
 
 
 

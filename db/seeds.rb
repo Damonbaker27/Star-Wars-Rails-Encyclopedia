@@ -112,6 +112,8 @@ end
 
 characters.each do |c|
   homeworld = Homeworld.find_or_create_by(name: c["homeworld"])
+  puts homeworld["name"]
+
   character = homeworld.characters.find_or_create_by(
     name:       c["name"],
     height:     c["height"],
