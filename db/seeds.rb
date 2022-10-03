@@ -130,6 +130,13 @@ characters.each do |c|
     CharacterStarship.create(character: character, starship: star)
   end
 
+  films = c["films"].split(",").map(&:strip)
+
+  films.each do |f|
+    film = Film.find_or_create_by(name: f)
+    CharacterFilm.create(character: character, film: film)
+  end
+
   # race = Race.find_or_create_by(name: c["species"])
   # race.characters.find_or_create_by(
   # name:       c["name"],
@@ -143,27 +150,6 @@ characters.each do |c|
   # imagepath:  c["image_path"]
   # )
 end
-
-# character_Films.each do |cf|
-# puts " the film is #{cf['films']} and the char is #{cf['name']}"
-# #films = Film.first_or_create(name: cf["films"])
-# char = Character.first_or_create(name: cf["name"])
-# puts "the character is #{char['name']} and the movie is #{films['name']}"
-# CharacterFilm.create(
-# character_id: char["id"],
-# film_id:      films["id"]
-# )
-# end
-# character_starships.each do |cs|
-# star_Ship = Starship.find_or_create_by(name: cs["starship"])
-# char = Character.find_or_create_by(name: cs["name"])
-# puts "#{star_Ship['id']}:#{star_Ship['name']}---> #{char['id']}:#{char['name']}"
-
-# CharacterStarShip.find_or_create_by(
-# starship_id:  star_Ship["id"],
-# character_id: char["id"]
-# )
-# end
 
 puts "imported #{Character.count} new characters"
 puts "imported #{Homeworld.count} new homeworlds"

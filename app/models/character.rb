@@ -1,7 +1,7 @@
 class Character < ApplicationRecord
   # relationship for the films table
-  # has_many :character_films
-  # has_many :films, through: :character_films
+  has_many :character_films
+  has_many :films, through: :character_films
 
   # relationship for the starship table
   has_many :character_starships
