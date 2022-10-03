@@ -5,14 +5,14 @@
     <%if @character.imagepath == "null" %>
       <%= image_tag("default.jpg")%>
       <%else%>
-      <%= image_tag(@character.imagepath,size:"500x500")%>
+      <%= image_tag(@character.imagepath,size:"450x450")%>
       <%end%>
   </div>
   <div class="column">
     <div>
           <h1 class = "title is-2"><%=@character.name%></h1>
           <h2 class  = "title is-5">Character description:</h2>
-          <h3 class = "title is-6">mass: <%=@character.mass%></h3>
+          <h3 class = "title is-6">Mass: <%=@character.mass%></h3>
           <h3 class = "title is-6">Birth year: <%=@character.birth_year%></h3>
 
           <% if @character.gender == "none" %>
@@ -28,10 +28,22 @@
           <h3 class = "title is-6">Homeworld: <%=link_to @character.homeworld.name, @character.homeworld%></h3>
           <% end %>
 
-          <h3 class = "title is-6">eye color: <%=@character.eye_color%></h3>
-          <h3 class = "title is-6">skin color: <%=@character.skin_color%></h3>
+          <h3 class = "title is-6">Eye color: <%= @character.eye_color%></h3>
+          <h3 class = "title is-6">Skin color: <%= @character.skin_color%></h3>
+          <h3 class = "title is-6">Starships: <% @character.starships.each do |s| %>
+                                              <%= link_to s["name"], s%>
+                                              <% end %></h3>
 
-          <h3 class = "title is-6">starships: <%=@character.%></h3>
+          <h3 class = "title is-6">Films: <% @character.films.each do |f| %>
+                                              <%= link_to f["name"], f%>,
+                                              <% end %></h3>
+
+
+
+
+
+
+
 
 
 
