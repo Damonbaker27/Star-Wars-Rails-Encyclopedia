@@ -1,118 +1,36 @@
 <section class="section">
-  <div class="container">
-    <div class="columns is-flex-wrap-wrap">
-      <% @characters.each do |character| %>
-        <div class ="column">
-
-        <div class="card">
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-      <%end%>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class= "card">
-              <div class= "card-image has-text-centered px-6">
-                <%if character.imagepath == "null"%>
-                  <img src="assets/default.jpg" height="500" width= "500">
-                <%else%>
-                  <img src="assets/<%=character.imagepath%>" height="500" width= "500">
-                <% end %>
-              </div>
-              <footer class="card footer">
-                  <%=link_to character.name, character%>
-              </footer>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section>
-<h3 class= "title has-text-centered is-size-4"> Characters</h3>
-
-  <div class="container is-flex is-flex-direction-column">
-
-      <div>
-        <div class="columns mt-5 is-8 is-variable">
-
+  <div class="container is-max-desktop">
+    <table class="table is-halfwidth is-hoverable">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Character Image</th>
+          <th>Character</th>
+        </tr>
+      </thead>
+      <tbody>
         <% @characters.each do |character| %>
-          <div class="columns is-4-tablet is-3-desktop">
-
-          </div>
-        <% end %>
-      </div>
-
+        <tr>
+          <td>
+            <%=character.id%>
+          </td>
+            <td>
+              <div class="image is-3by5 is-rounded">
+                <figure class="">
+                  <%if character.imagepath == "null"%>
+                  <%image_tag("default.jpg")%>
+                  <%else%>
+                    <img src="assets/<%=character.imagepath%>" height="500" width= "500">
+                  <% end %>
+                </figure>
+              </div>
+            </td>
+          <td>
+            <h3><%=link_to character.name, character%></h3>
+          </td>
+        </tr>
+        <%end%>
+      </tbody>
+    </table>
   </div>
-
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

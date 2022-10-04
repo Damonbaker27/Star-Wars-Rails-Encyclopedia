@@ -1,10 +1,36 @@
-<h1> Star Wars homeworlds</h1>
-
-<ul>
-  <% @homeworlds.each do |homeworld| %>
-    <li>
-        <%= link_to homeworld.name, homeworld %>
-      </a>
-    </li>
-  <% end %>
-</ul>
+<section class="section">
+  <div class="container is-max-desktop">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Character Image</th>
+          <th>Character</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @homeworlds.each do |homeworld| %>
+        <tr>
+          <td>
+            <%=homeworld.id%>
+          </td>
+            <td>
+              <div class="image is-1by1 is-rounded">
+                <figure class="">
+                  <%if homeworld.imagepath == "null"%>
+                  <%image_tag("default.jpg")%>
+                  <%else%>
+                    <img src="assets/<%=homeworld.imagepath%>" height="500" width= "500">
+                  <% end %>
+                </figure>
+              </div>
+            </td>
+          <td>
+            <h3><%=link_to homeworld.name, homeworld%></h3>
+          </td>
+        </tr>
+        <%end%>
+      </tbody>
+    </table>
+  </div>
+</section>
