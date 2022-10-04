@@ -28,12 +28,16 @@
             <h3 class = "title is-6">Homeworld: <%=link_to @character.homeworld.name, @character.homeworld%></h3>
             <% end %>
 
+
             <h3 class = "title is-6">Eye color: <%= @character.eye_color%></h3>
             <h3 class = "title is-6">Skin color: <%= @character.skin_color%></h3>
+
+
+            <%if @character.starships == "null" %>
             <h3 class = "title is-6">Starships: <% @character.starships.each do |s| %>
                                                 <%= link_to s["name"], s%>
                                                 <% end %></h3>
-
+            <%end%>
             <h3 class = "title is-6">Films: <% @character.films.each do |f| %>
                                                 <%= link_to f["name"], f%>,
                                                 <% end %></h3>
