@@ -13,35 +13,46 @@
   <section class="section">
     <div class="content">
       <h1>About my website!</h1>
-      <p>The following sections describe my datasets as well as my database schema.</p>
+      <h5 class="subtitle">The following sections describe my datasets as well as my database schema.</h5>
       <h2>Datasets</h2>
-      <p></p>
+      <p>The datasets I used were 4 starwars CSVs created from the Starwars API which populated the following tables.</p>
 
+      <h5>Characters Table</h5>
 
+      <p>This table was populated the Characters.CSV with all of the characters physical attributes,
+      all of the ships they have flow through the movies as well as all of the movies they have been in.</p>
 
+      <h5>Starships Table</h5>
 
+      <p>This CSV contains all the information about the Starships that was be inserted into the Starships table.
+      it includes all of the information about the ships as well as an image for some.</p>
 
+      <h5>Homeworlds Table</h5>
 
+      <p>This table contains all the information on the various home worlds for each character.
+        This table had a one to many relationship with the Characters table.</p>
 
-      <h2>Second level</h2>
-      <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-      <ul>
-        <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-        <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-        <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-        <li>Ut non enim metus.</li>
-      </ul>
-      <h3>Third level</h3>
-      <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
-      <ol>
-        <li>Donec blandit a lorem id convallis.</li>
-        <li>Cras gravida arcu at diam gravida gravida.</li>
-        <li>Integer in volutpat libero.</li>
-        <li>Donec a diam tellus.</li>
-        <li>Aenean nec tortor orci.</li>
-        <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
-        <li>Vivamus maximus ultricies pulvinar.</li>
-      </ol>
+      <h5>Films Table</h5>
+      <p>This table was populated by the Films.CSV which included infomation about the films like
+          opening crawl, runtime and director. Each Film included many characters and each character had multiple
+          films. This means that the table has many to many relationship with the characters table. An associative table was created to allow
+          for a one to many relationship.</p>
+
+      <h5>CharacterFilm Table</h5>
+      <p>This table was created to turn the many to many relationship between characters and films. It hold the
+      characterID and the filmID for each character and their respective film. </p>
+
+      <h5>CharacterStarships Table</h5>
+      <p>This table was created to solve the many to many relationship between Characters and Starships. It contains the
+      characterID and the StarshipID </p>
+
+      <h2>Entity Relationship Diagram</h2>
+      <div class="image is-4by5 ">
+        <figure>
+          <img src="/assets/ERDNew.png" alt="ERD diagram">
+        </figure>
+      </div>
+
   </section>
 </div>
 
