@@ -1,3 +1,20 @@
+
+<div class="container">
+  <nav class="pagination is-small" role="navigation">
+    <ul class="pagination-list">
+      <li><%= paginate @characters%></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
 <section class="section">
   <div class="container">
     <div class="column is-full">
@@ -21,7 +38,7 @@
                     <%if character.imagepath == "null"%>
                     <img src="/assets/default.jpg">
                     <%else%>
-                      <img src="assets/<%=character.imagepath%>" height="500" width= "500">
+                      <a href=""></a><img src="assets/<%=character.imagepath%>" height="500" width= "500"></a>
                     <% end %>
                   </figure>
                 </div>

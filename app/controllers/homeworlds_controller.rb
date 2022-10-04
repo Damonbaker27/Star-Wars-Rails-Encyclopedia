@@ -1,6 +1,6 @@
 class HomeworldsController < ApplicationController
   def index
-    @homeworlds = Homeworld.all
+    @homeworlds = Homeworld.all.page(params[:page])
   end
 
   def show

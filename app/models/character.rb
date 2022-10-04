@@ -9,6 +9,8 @@ class Character < ApplicationRecord
 
   # relationship for the homeworld table
   belongs_to :homeworld
-  # relationship for the race table
-  # belongs_to :Race
+
+  validates :name, presence: true
+
+  paginates_per 15
 end

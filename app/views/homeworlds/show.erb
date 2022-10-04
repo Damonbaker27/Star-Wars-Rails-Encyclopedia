@@ -1,40 +1,42 @@
-<div class ="box">
-<div class="columns">
-  <div class= "column is-half">
-    <%if @homeworld.imagepath == "null" %>
-    <%= image_tag("default.jpg")%>
-    <%else%>
-    <%= image_tag(@homeworld.imagepath, size:"450x500")%>
-    <%end%>
-  </div>
-  <div class="column">
-    <div>
-          <h1 class = "title is-2"><%=@homeworld.name%></h1>
-          <h1 class = "title is-5">planet attributes</h1>
-          <h1 class = "title is-6">Terrain: <%=@homeworld.terrain%></h1>
-          <%if @homeworld.gravity == "N/A"%>
-          <h1 class = "title is-6">Gravity: Unknown</h1>
-          <%else%>
-          <h1 class = "title is-6">gravity: <%=@homeworld.gravity%></h1>
-          <%end%>
+<div class="container">
+  <div class ="box">
+  <div class="columns">
+    <div class= "column is-half">
+      <%if @homeworld.imagepath == "null" %>
+      <%= image_tag("default.jpg")%>
+      <%else%>
+      <%= image_tag(@homeworld.imagepath, size:"450x500")%>
+      <%end%>
+    </div>
+    <div class="column">
+      <div>
+            <h1 class = "title is-2"><%=@homeworld.name%></h1>
+            <h1 class = "title is-5">Planet Attributes</h1>
+            <h1 class = "title is-6">Terrain: <%=@homeworld.terrain%></h1>
+            <%if @homeworld.gravity == "N/A"%>
+            <h1 class = "title is-6">Gravity: Unknown</h1>
+            <%else%>
+            <h1 class = "title is-6">gravity: <%=@homeworld.gravity%></h1>
+            <%end%>
 
-          <%if @homeworld.surface_water == 0%>
-          <h1 class = "title is-6">planet has no surface water</h1>
-          <%else%>
-          <h1 class = "title is-6">suface water: <%=@homeworld.surface_water%></h1>
-          <%end%>
+            <%if @homeworld.surface_water == 0%>
+            <h1 class = "title is-6">planet has no surface water</h1>
+            <%else%>
+            <h1 class = "title is-6">suface water: <%=@homeworld.surface_water%></h1>
+            <%end%>
 
-          <h1 class = "title is-6">diameter: <%=@homeworld.diameter%></h1>
-          <h1 class = "title is-6">orbital period: <%=@homeworld.orbital_period%></h1>
-          <h1 class = "title is-6">rotational period: <%=@homeworld.rotation_period%></h1>
+            <h1 class = "title is-6">diameter: <%=@homeworld.diameter%></h1>
+            <h1 class = "title is-6">orbital period: <%=@homeworld.orbital_period%></h1>
+            <h1 class = "title is-6">rotational period: <%=@homeworld.rotation_period%></h1>
 
-          <%if @homeworld.population == 0%>
-          <h1 class = "title is-6">population: Unknown</h1>
-          <%else%>
-          <h1 class = "title is-6">population: <%=@homeworld.population%></h1>
-          <%end%>
+            <%if @homeworld.population == 0%>
+            <h1 class = "title is-6">population: Unknown</h1>
+            <%else%>
+            <h1 class = "title is-6">population: <%=@homeworld.population%></h1>
+            <%end%>
+          </div>
         </div>
       </div>
-    </div>
-  <div>
+    <div>
+  </div>
 </div>
