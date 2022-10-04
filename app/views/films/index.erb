@@ -1,37 +1,40 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Number</th>
-          <th>Character Image</th>
-          <th>Character</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @films.each do |film| %>
-        <tr>
-          <td>
-            <%=film.id%>
-          </td>
+
+    <div class="column is-full">
+      <table class="table is-fullwidth">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Character Image</th>
+            <th>Character</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @films.each do |film| %>
+          <tr>
             <td>
-              <div class="image is-3by4">
-                <figure class="">
-                  <%if film.imagepath == "null"%>
-                    <%image_tag("default.jpg")%>
-                  <%else%>
-                    <img src="assets/<%=film.imagepath%>">
-                  <% end %>
-                </figure>
-              </div>
+              <%=film.id%>
             </td>
-          <td>
-            <h3><%=link_to film.name, film%></h3>
-          </td>
-        </tr>
-        <%end%>
-      </tbody>
-    </table>
+              <td>
+                <div class="image is-3by4">
+                  <figure class="">
+                    <%if film.imagepath == "null"%>
+                      <%image_tag("default.jpg")%>
+                    <%else%>
+                      <img src="assets/<%=film.imagepath%>">
+                    <% end %>
+                  </figure>
+                </div>
+              </td>
+            <td>
+              <h3><%=link_to film.name, film%></h3>
+            </td>
+          </tr>
+          <%end%>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>

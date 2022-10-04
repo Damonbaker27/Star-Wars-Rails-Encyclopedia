@@ -1,6 +1,6 @@
 <section class="section">
   <div class="container is-max-desktop">
-    <table class="table">
+    <table class="table is-fullwidth">
       <thead>
         <tr>
           <th>Number</th>
@@ -15,12 +15,12 @@
             <%=homeworld.id%>
           </td>
             <td>
-              <div class="image is-1by1 is-rounded">
+              <div class="image is-1by1">
                 <figure class="">
                   <%if homeworld.imagepath == "null"%>
                   <%image_tag("default.jpg")%>
                   <%else%>
-                    <img src="assets/<%=homeworld.imagepath%>" height="500" width= "500">
+                    <img src="assets/<%=homeworld.imagepath%>">
                   <% end %>
                 </figure>
               </div>
