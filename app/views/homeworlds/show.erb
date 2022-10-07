@@ -11,28 +11,28 @@
     <div class="column">
       <div>
             <h1 class = "title is-2"><%=@homeworld.name%></h1>
-            <h1 class = "title is-5">Planet Attributes</h1>
+            <h1 class = "title is-5">Planet Attributes:</h1>
             <h1 class = "title is-6">Terrain: <%=@homeworld.terrain%></h1>
             <%if @homeworld.gravity == "N/A"%>
             <h1 class = "title is-6">Gravity: Unknown</h1>
             <%else%>
-            <h1 class = "title is-6">gravity: <%=@homeworld.gravity%></h1>
+            <h1 class = "title is-6">Gravity: <%=@homeworld.gravity%></h1>
             <%end%>
 
             <%if @homeworld.surface_water == 0%>
-            <h1 class = "title is-6">planet has no surface water</h1>
+            <h1 class = "title is-6">Planet has no surface water</h1>
             <%else%>
-            <h1 class = "title is-6">suface water: <%=@homeworld.surface_water%></h1>
+            <h1 class = "title is-6">Surface water: <%=@homeworld.surface_water%>%</h1>
             <%end%>
 
-            <h1 class = "title is-6">diameter: <%=@homeworld.diameter%></h1>
-            <h1 class = "title is-6">orbital period: <%=@homeworld.orbital_period%></h1>
-            <h1 class = "title is-6">rotational period: <%=@homeworld.rotation_period%></h1>
+            <h1 class = "title is-6">Diameter: <%=@homeworld.diameter%> km</h1>
+            <h1 class = "title is-6">Orbital period: <%=@homeworld.orbital_period%> Standard days</h1>
+            <h1 class = "title is-6">Rotational period: <%=@homeworld.rotation_period%> hours</h1>
 
             <%if @homeworld.population == 0%>
-            <h1 class = "title is-6">population: Unknown</h1>
+            <h1 class = "title is-6">Population: Unknown</h1>
             <%else%>
-            <h1 class = "title is-6">population: <%=@homeworld.population%></h1>
+            <h1 class = "title is-6">Population: <%=@homeworld.population%></h1>
             <%end%>
           </div>
         </div>

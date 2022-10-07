@@ -27,9 +27,9 @@
                   <div class="image is-5by4">
                     <figure class="">
                       <%if starship.imagepath == "null"%>
-                        <img src="/assets/default.jpg">
+                        <a href="/starships/<%=starship.id%>"><img src="/assets/default.jpg"></a>
                       <%else%>
-                        <img src="assets/<%=starship.imagepath%>">
+                        <a href="/starships/<%=starship.id%>"><img src="/assets/<%=starship.imagepath%>"></a>
                       <% end %>
                     </figure>
                   </div>

@@ -6,36 +6,36 @@
     </div>
   </div>
 </div>
-
 <section class="section">
   <div class="container">
+  <h1 class=" title is-1">Character List</h1>
     <div class="column is-full">
-      <table class="table is-fullwidth">
+      <table class="table is-fullwidth is-hoverable is-striped">
         <thead>
           <tr>
-            <th>Number</th>
+            <th>Character Number</th>
             <th>Character Image</th>
             <th>Character</th>
           </tr>
         </thead>
         <tbody>
           <% @characters.each do |character| %>
-          <tr>
-            <td>
+          <tr style=" height:25%">
+            <td style=" width:10px">
               <%=character.id%>
             </td>
-              <td>
-                <div class="image is-96x96">
-                  <figure class="">
+              <td style=" width:10px">
+                <div class="image is-128x128">
+                  <figure class="image is-128x128">
                     <%if character.imagepath == "null"%>
-                    <img src="/assets/default.jpg">
+                    <a href="/characters/<%=character.id%>"><img src="/assets/default.jpg"></a>
                     <%else%>
-                      <a href=""></a><img src="assets/<%=character.imagepath%>" height="500" width= "500"></a>
+                      <a href="/characters/<%=character.id%>"><img src="/assets/<%=character.imagepath%>" width="150" height="150"></a>
                     <% end %>
                   </figure>
                 </div>
               </td>
-            <td>
+            <td style=" width:1000px">
               <h3><%=link_to character.name, character%></h3>
             </td>
           </tr>

@@ -8,12 +8,13 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+  <h3 class="title is-1">Planet List</h3>
     <table class="table is-fullwidth">
       <thead>
         <tr>
-          <th>Number</th>
-          <th>Character Image</th>
-          <th>Character</th>
+          <th>Planet Number</th>
+          <th>Planet Image</th>
+          <th>Planet Name</th>
         </tr>
       </thead>
       <tbody>
@@ -26,9 +27,9 @@
               <div class="image is-1by1">
                 <figure class="">
                   <%if homeworld.imagepath == "null"%>
-                  <%image_tag("default.jpg")%>
+                  <a href="/homeworlds/<%=homeworld.id%>"><img src="/assets/default.jpg"></a>
                   <%else%>
-                    <img src="assets/<%=homeworld.imagepath%>">
+                    <a href="/homeworlds/<%=homeworld.id%>"><img src="/assets/<%=homeworld.imagepath%>"></a>
                   <% end %>
                 </figure>
               </div>

@@ -13,8 +13,9 @@
           <div class="content">
             <h1 class = "title is-2"><%=@character.name%></h1>
             <h2 class  = "title is-5">Character description:</h2>
-            <h3 class = "title is-6">Mass: <%=@character.mass%></h3>
-            <h3 class = "title is-6">Birth year: <%=@character.birth_year%></h3>
+            <h3 class = "title is-6">Height: <%=@character.height%> cm</h3>
+            <h3 class = "title is-6">Mass: <%=@character.mass%> kg</h3>
+            <h3 class = "title is-6">Birth year: <%=@character.birth_year%> BBY</h3>
 
             <% if @character.gender == "none" %>
               <h3 class = "title is-6">Gender: Robot</h3>
@@ -33,7 +34,7 @@
             <h3 class = "title is-6">Skin color: <%= @character.skin_color%></h3>
 
 
-            <%if @character.starships == "null" %>
+            <%if @character.starships.each != "no ship" %>
             <h3 class = "title is-6">Starships: <% @character.starships.each do |s| %>
                                                 <%= link_to s["name"], s%>
                                                 <% end %></h3>
