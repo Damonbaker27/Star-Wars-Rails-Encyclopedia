@@ -1,3 +1,4 @@
+
 <div class="container">
   <div class ="columns">
     <div class="column">
@@ -5,41 +6,47 @@
     </div>
   </div>
 </div>
-
 <section class="section">
-  <div class="container is-max-desktop">
-  <h3 class="title is-1">Planet List</h3>
-    <table class="table is-fullwidth">
-      <thead>
-        <tr>
-          <th>Planet Number</th>
-          <th>Planet Image</th>
-          <th>Planet Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @homeworlds.each do |homeworld| %>
-        <tr>
-          <td>
-            <%=homeworld.id%>
-          </td>
-            <td>
-              <div class="image is-1by1">
-                <figure class="">
-                  <%if homeworld.imagepath == "null"%>
-                  <a href="/homeworlds/<%=homeworld.id%>"><img src="/assets/default.jpg"></a>
-                  <%else%>
-                    <a href="/homeworlds/<%=homeworld.id%>"><img src="/assets/<%=homeworld.imagepath%>"></a>
-                  <% end %>
-                </figure>
-              </div>
-            </td>
-          <td>
-            <h3><%=link_to homeworld.name, homeworld%></h3>
-          </td>
-        </tr>
-        <%end%>
-      </tbody>
-    </table>
+  <div class="container">
+  <h1 class=" title is-1">Planets</h1>
+    <div class="column is-full">
+      <table class="table is-fullwidth is-hoverable is-striped">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Image</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+        <%count = 1%>
+          <% @homeworlds.each do |homeworld| %>
+          <%if homeworld.name != "unknown"%>
+            <tr style=" height:25%">
+              <td style=" width:10px">
+                <%=count%>
+              </td>
+                <td >
+                  <div style = "overflow: hidden">
+                      <%if homeworld.imagepath == "null"%>
+                      <a class="image is-128x128" href="/homeworlds/<%=homeworld.id%>"><img src="/assets/default.jpg"></a>
+                      <%else%>
+                        <a href="/homeworlds/<%=homeworld.id%>"><img src="/assets/<%=homeworld.imagepath%>" width="150" height="150"></a>
+                      <% end %>
+                  </div>
+                </td>
+              <td style=" width:1000px">
+                <h3><%=link_to homeworld.name, homeworld%></h3>
+              </td>
+            </tr>
+            <%count += 1%>
+          <%end%>
+          <%end%>
+        </tbody>
+      </table>
+      <div class="column">
+      <%= paginate @homeworlds%>
+    </div>
+    </div>
   </div>
 </section>

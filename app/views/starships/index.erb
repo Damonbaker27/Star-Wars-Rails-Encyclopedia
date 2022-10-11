@@ -6,42 +6,46 @@
   </div>
 </div>
 <section class="section">
-  <div class="container is-widescreen">
-    <div class="columns">
-      <div class="column is-full">
-        <table class="table is-fullwidth">
-          <thead>
-            <tr>
-              <th>Number</th>
-              <th>Character Image</th>
-              <th>Character</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @starships.each do |starship| %>
-            <tr>
-              <td>
-                <%=starship.id%>
-              </td>
-                <td>
-                  <div class="image is-5by4">
-                    <figure class="">
-                      <%if starship.imagepath == "null"%>
-                        <a href="/starships/<%=starship.id%>"><img src="/assets/default.jpg"></a>
-                      <%else%>
-                        <a href="/starships/<%=starship.id%>"><img src="/assets/<%=starship.imagepath%>"></a>
-                      <% end %>
-                    </figure>
-                  </div>
+  <div class="container">
+  <h1 class=" title is-1">Starships</h1>
+    <div class="column is-full">
+      <table class="table is-fullwidth is-striped">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Image</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%count = 1%>
+          <% @starships.each do |starship| %>
+            <%if starship.name != "no ship"%>
+              <tr style=" height:25%">
+                <td style=" width:10px">
+                  <%=count%>
                 </td>
-              <td>
-                <h3><%=link_to starship.name, starship%></h3>
-              </td>
-            </tr>
+                  <td>
+                    <div style = "overflow: hidden">
+                        <%if starship.imagepath == "null"%>
+                        <a class="image is-128x128" href="/starships/<%=starship.id%>"><img src="/assets/default.jpg"></a>
+                        <%else%>
+                          <a href="/starships/<%=starship.id%>"><img src="/assets/<%=starship.imagepath%>" width="150" height="150"></a>
+                        <% end %>
+                    </div>
+                  </td>
+                <td style=" width:1000px">
+                  <h3><%=link_to starship.name, starship%></h3>
+                </td>
+              </tr>
+              <%count += 1%>
             <%end%>
-          </tbody>
-        </table>
-      </div>
+          <%end%>
+        </tbody>
+      </table>
+      <div class="column">
+      <%= paginate @starships%>
+    </div>
     </div>
   </div>
 </section>

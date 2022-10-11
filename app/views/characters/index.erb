@@ -8,40 +8,43 @@
 </div>
 <section class="section">
   <div class="container">
-  <h1 class=" title is-1">Character List</h1>
+  <h1 class=" title is-1">Characters</h1>
     <div class="column is-full">
-      <table class="table is-fullwidth is-hoverable is-striped">
+      <table class="table is-fullwidth is-striped">
         <thead>
           <tr>
-            <th>Character Number</th>
-            <th>Character Image</th>
-            <th>Character</th>
+            <th>Index</th>
+            <th>Image</th>
+            <th>Name</th>
           </tr>
         </thead>
         <tbody>
+        <%count = 1 %>
           <% @characters.each do |character| %>
           <tr style=" height:25%">
             <td style=" width:10px">
               <%=character.id%>
             </td>
-              <td style=" width:10px">
-                <div class="image is-128x128">
-                  <figure class="image is-128x128">
+              <td >
+                <div style = "overflow: hidden">
                     <%if character.imagepath == "null"%>
-                    <a href="/characters/<%=character.id%>"><img src="/assets/default.jpg"></a>
+                    <a class="image is-128x128" href="/characters/<%=character.id%>"><img src="/assets/default.jpg"></a>
                     <%else%>
                       <a href="/characters/<%=character.id%>"><img src="/assets/<%=character.imagepath%>" width="150" height="150"></a>
                     <% end %>
-                  </figure>
                 </div>
               </td>
             <td style=" width:1000px">
               <h3><%=link_to character.name, character%></h3>
             </td>
           </tr>
+          <%count += 1%>
           <%end%>
         </tbody>
       </table>
+      <div class="column">
+      <%= paginate @characters%>
+    </div>
     </div>
   </div>
 </section>

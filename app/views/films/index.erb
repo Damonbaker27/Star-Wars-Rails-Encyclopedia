@@ -1,35 +1,38 @@
 
+<div class="container">
+  <div class ="columns">
+    <div class="column"></div>
+    </div>
+  </div>
+</div>
 <section class="section">
-  <div class="container is-max-desktop">
-  <h1 class="title is-1"> Films List</h1>
+  <div class="container">
+  <h1 class=" title is-1">Films</h1>
     <div class="column is-full">
-      <table class="table is-hoverable is-fullwidth is-striped">
+      <table class="table is-fullwidth is-striped">
         <thead>
           <tr>
-            <th>Film Number</th>
-            <th>Film Poster</th>
-            <th>Film Name</th>
+            <th>Index</th>
+            <th>Image</th>
+            <th>Name</th>
           </tr>
         </thead>
         <tbody>
           <% @films.each do |film| %>
-          <tr>
-            <td>
+          <tr style=" height:25%">
+            <td style=" width:10px">
               <%=film.id%>
             </td>
-              <td>
-                <div class="image is-3by4">
-                  <figure class="">
+              <td style=" width:10px">
+                <div class="image is-4by5" style = "overflow: hidden">
                     <%if film.imagepath == "null"%>
-                      <a href="/films/<%=film.id%>"><img src="/assets/<%=film.imagepath%>"></a>
+                    <a href="/films/<%=film.id%>"><img src="/assets/default.jpg"></a>
                     <%else%>
-
-                       <a href="/films/<%=film.id%>"><img src="/assets/<%=film.imagepath%>"></a>
+                      <a href="/films/<%=film.id%>"><img src="/assets/<%=film.imagepath%>" ></a>
                     <% end %>
-                  </figure>
                 </div>
               </td>
-            <td>
+            <td style=" width:1000px">
               <h3><%=link_to film.name, film%></h3>
             </td>
           </tr>
