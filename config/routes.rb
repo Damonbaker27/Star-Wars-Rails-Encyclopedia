@@ -6,14 +6,13 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :starships
-  resources :characters
+  resources :characters do
+    collection do
+      get "search"
+    end
+  end
+
   resources :homeworlds
   resources :films
-  resources :races
   get "about/index"
-  # get "characters/" to: 'characters/index' as: character_path
-  # get "starships/index"
-  get "races/index", to: "races#index"
-  # get "homeworlds/index"
-  # get "films/index"
 end

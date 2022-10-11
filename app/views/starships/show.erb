@@ -4,7 +4,7 @@
     <div class="columns is-vcentered">
       <div class= "column is-half">
         <%if @starship.imagepath == "null" %>
-        <%= image_tag("default.jpg")%>
+        <img src="/assets/imagenot.jpg" height="500" width="300">
         <%else%>
         <%= image_tag(@starship.imagepath, size:"500x500")%>
         <%end%>

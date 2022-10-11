@@ -1,13 +1,17 @@
 <div class="container">
   <div class ="box">
   <div class="columns">
-    <div class= "column is-half">
       <%if @homeworld.imagepath == "null" %>
-      <%= image_tag("default.jpg")%>
+
+        <div class= "column is-one-third">
+          <img src="/assets/imagenot.jpg" height="500" width="300">
+        </div>
       <%else%>
-      <%= image_tag(@homeworld.imagepath, size:"450x500")%>
+        <div class= "column is-half">
+          <%= image_tag(@homeworld.imagepath, size:"450x500")%>
+        </div>
       <%end%>
-    </div>
+
     <div class="column">
       <div>
             <h1 class = "title is-2"><%=@homeworld.name%></h1>

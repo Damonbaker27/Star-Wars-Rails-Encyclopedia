@@ -6,4 +6,10 @@ class CharactersController < ApplicationController
   def show
     @character = Character.find(params[:id])
   end
+
+  def search
+    wildcard_search = "%#{params[:keywords]}%"
+
+    @characters = Character.where("name LIKE ?", wildcard_search)
+  end
 end
