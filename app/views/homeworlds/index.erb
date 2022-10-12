@@ -1,14 +1,27 @@
 
 <div class="container">
+<h1 class=" title is-1 mt-5">Planets</h1>
   <div class ="columns">
     <div class="column">
+      <nav class="navbar-end mt-5">
+          <%= form_with(url: "homeworlds/search", method: :get, local: true) do%>
+            <div class="field is-grouped mb-5">
+              <div class="control">
+                <%= text_field_tag(:keywords, nil, class: "input", placeholder: "Search planet here")%>
+              </div>
+              <div class="control">
+                <%= submit_tag("search", class: "button is-link")%>
+              </div>
+            </div>
+          <% end %>
+        </nav>
       <%= paginate @homeworlds%>
     </div>
   </div>
 </div>
 <section class="section">
   <div class="container">
-  <h1 class=" title is-1">Planets</h1>
+
     <div class="column is-full">
       <table class="table is-fullwidth is-hoverable is-striped">
         <thead>

@@ -1,9 +1,8 @@
-
 <div class="container">
+<h1 class=" title is-1 mt-5">Characters</h1>
   <div class ="columns">
     <div class="column">
-        <%= paginate @characters%>
-        <nav class="navbar-end">
+        <nav class="navbar-end mt-5">
           <%= form_with(url: "characters/search", method: :get, local: true) do%>
             <div class="field is-grouped mb-5">
               <div class="control">
@@ -15,12 +14,12 @@
             </div>
           <% end %>
         </nav>
+        <%= paginate @characters%>
     </div>
   </div>
 </div>
 <section class="section">
   <div class="container">
-  <h1 class=" title is-1">Characters</h1>
     <div class="column is-full">
       <table class="table is-fullwidth is-striped">
         <thead>
@@ -37,26 +36,26 @@
             <td style=" width:10px">
               <%=character.id%>
             </td>
-              <td >
+              <td>
                 <div style = "overflow: hidden">
                     <%if character.imagepath == "null"%>
-                    <a class="image is-128x128" href="/characters/<%=character.id%>"><img src="/assets/imagenot.jpg"></a>
+                    <a class="image is-128x128" href="/characters/<%=character.id%>"><img src="/assets/imagenot.jpg" alt="default image"></a>
                     <%else%>
-                      <a href="/characters/<%=character.id%>"><img src="/assets/<%=character.imagepath%>" width="150" height="150"></a>
+                      <a href="/characters/<%=character.id%>"><img src="/assets/<%=character.imagepath%>" width="150" height="150" alt="character image"></a>
                     <% end %>
                 </div>
               </td>
-            <td style=" width:1000px">
+              <td style=" width:1000px">
               <h3><%=link_to character.name, character%></h3>
-            </td>
+              </td>
           </tr>
           <%count += 1%>
           <%end%>
         </tbody>
       </table>
       <div class="column">
-      <%= paginate @characters%>
-    </div>
+        <%= paginate @characters%>
+      </div>
     </div>
   </div>
 </section>

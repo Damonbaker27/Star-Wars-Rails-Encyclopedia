@@ -6,7 +6,7 @@
 </div>
 <section class="section">
   <div class="container">
-  <h1 class=" title is-1">Found <%=@characters.count%> Characters</h1>
+  <h1 class=" title is-1">Found <%=@homeworlds.count%> Planets</h1>
     <div class="column is-full">
       <table class="table is-fullwidth is-striped">
         <thead>
@@ -17,23 +17,23 @@
           </tr>
         </thead>
         <tbody>
-        <%count = 1 %>
-          <% @characters.each do |character| %>
+        <% count = 1 %>
+          <% @homeworlds.each do |homeworld| %>
           <tr style=" height:25%">
             <td style=" width:10px">
               <%=count%>
             </td>
               <td >
                 <div style = "overflow: hidden">
-                    <%if character.imagepath == "null"%>
-                    <a class="image is-128x128" href="/characters/<%=character.id%>"><img src="/assets/imagenot.jpg"></a>
+                    <%if homeworld.imagepath == "null"%>
+                    <a class="image is-128x128" href="/homeworlds/<%=homeworld.id%>"><img src="/assets/imagenot.jpg"></a>
                     <%else%>
-                      <a href="/characters/<%=character.id%>"><img src="/assets/<%=character.imagepath%>" width="150" height="150"></a>
+                      <a href="/homeworlds/<%=homeworld.id%>"><img src="/assets/<%=homeworld.imagepath%>" width="150" height="150"></a>
                     <% end %>
                 </div>
               </td>
             <td style=" width:1000px">
-              <h3><%=link_to character.name, character%></h3>
+              <h3><%=link_to homeworld.name, homeworld%></h3>
             </td>
           </tr>
           <%count += 1%>

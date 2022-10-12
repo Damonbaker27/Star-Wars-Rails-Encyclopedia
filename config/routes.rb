@@ -12,7 +12,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :homeworlds
+  resources :homeworlds do
+    collection do
+      get "search"
+    end
+  end
+
   resources :films
   get "about/index"
 end
