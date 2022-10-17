@@ -1,6 +1,5 @@
-
 <div class="container">
-  <div class ="box">
+
     <div class="columns is-vcentered">
       <div class= "column is-one-third">
         <%if @film.imagepath == "null" %>
@@ -15,7 +14,13 @@
         <h3 class = "title is-4">Release date: <%=@film.release_date%></h3>
         <p><%=@film.opening_crawl%></p>
         <br>
+
+        <h3 class="title is-4">Character Appearances: </h3> <%@film.characters.each do |c|%>
+                                                            <%= link_to c.name, c %>,
+                                                            <%end%>
+
+
       </div>
-    </div
   </div>
 </div>
+

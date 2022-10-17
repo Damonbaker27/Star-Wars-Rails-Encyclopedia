@@ -23,7 +23,7 @@
             <h3 class = "title is-6">Gender: <%=@character.gender%></h3>
             <% end %>
 
-            <% if @character.homeworld.name == "null" %>
+            <% if @character.homeworld.name == "null" || @character.homeworld.name == "unknown" %>
               <h3 class = "title is-6">Homeworld: Unknown</h3>
             <% else %>
             <h3 class = "title is-6">Homeworld: <%=link_to @character.homeworld.name, @character.homeworld%></h3>
@@ -37,7 +37,7 @@
                                                   <%if s.name == "no ship"%>
                                                     none
                                                   <%else%>
-                                                    <%= link_to s["name"], s%>
+                                                    <%= link_to s["name"], s%>,
                                                   <%end%>
                                                 <% end %></h3>
             <h3 class = "title is-6">Films: <% @character.films.each do |f| %>
