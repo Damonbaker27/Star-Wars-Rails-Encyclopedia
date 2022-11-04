@@ -39,7 +39,7 @@
               <td>
                 <div style = "overflow: hidden">
                     <%if character.imagepath == "null"%>
-                    <a class="image is-128x128" href="/characters/<%=character.id%>"><img src="/assets/imagenot.jpg" alt="default image"></a>
+                    <a class="image is-128x128" href="/characters/<%=character.id%>"> <img src="/assets/imagenot.jpg" alt="default image"></a>
                     <%else%>
                       <a href="/characters/<%=character.id%>"><img src="/assets/<%=character.imagepath%>" width="150" height="150" alt="character image"></a>
                     <% end %>

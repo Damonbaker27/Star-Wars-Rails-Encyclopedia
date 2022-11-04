@@ -12,16 +12,13 @@
       <div class="column">
           <div class="content">
             <h3 class="title is-2"> <%=@starship.name%> </h3>
-            <h3 class = "title is-6">Model: <%=@starship.model%></p>
+            <h3 class = "title is-6">Model: <%=@starship.model%></h3>
             <h3 class = "title is-6">Manufacturer: <%=@starship.manufacturer%></h3>
             <h3 class = "title is-6">Cost in credits: <%=@starship.cost_in_credits%> credits</h3>
             <h3 class = "title is-6">Length: <%=@starship.length%> meters</h3>
             <%if @starship.max_atmospgering_speed != 0 %>
               <h3 class = "title is-6">Max Atmosphere speed: <%=@starship.max_atmospgering_speed%> km/h</h3>
             <%end%>
-
-
-
 
             <h3 class = "title is-6">Crew size: <%=@starship.crew%> officers, pilots, and enlisted crew</h3>
             <h3 class = "title is-6">Passengers: <%=@starship.passengers%> troops and support staff</h3>
@@ -36,7 +33,6 @@
 
           </div>
         </div>
-      <div>
     </div>
 </div>
 
